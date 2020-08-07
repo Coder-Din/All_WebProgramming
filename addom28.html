@@ -1,0 +1,26 @@
+<html>
+	<body>
+		
+		<ol>
+			<li>1st elem</li>
+			<li>2nd elem</li>
+		</ol>
+		<button onclick="funcdelete()">Delete last element</button>
+		
+		<script>
+		var ol = document.getElementsByTagName('ol');
+	    
+		function funcdelete(){
+			
+			for(i = 0; i <= ol.length; i++){
+				var lastelem = ol[i].lastElementChild;
+				ol[i].removeChild(lastelem);
+			}
+			
+		}
+		</script>
+		
+		
+		
+	</body>
+</html>

@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<title>This is my title!!!</title>
+	</head>
+	<body>
+		<p>0</p>
+		<p>0</p>
+		<p>0</p>
+	</body>
+	<script>
+	var text = document.getElementsByTagName('p');
+	for(let i = 0; i < text.length; i++){
+		text[i].addEventListener('click', () => window.setInterval(() => text[i].innerHTML = Number(text[i].innerHTML) + 1, 1000));
+	}
+	
+	</script>
+</html>

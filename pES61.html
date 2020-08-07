@@ -1,0 +1,25 @@
+<html>
+	<style>
+		p{
+			height: 20px;
+			border: 1px solid red;
+		}
+	</style>
+	<body>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+	</body>
+	<script>
+	
+	var elems = document.querySelectorAll('p');
+	for(let i = 0; i < elems.length; i++){
+		elems[i].addEventListener('click', function(){
+			this.innerHTML = i;
+		})
+	}
+		
+	</script>
+</html>

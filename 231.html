@@ -1,0 +1,26 @@
+<html>
+    <body>
+        
+        
+        
+        <img src = "bridge-img%20itg.jpg">
+        <img src = "arrowright.jpg">
+        
+        <script>
+            
+            var elems = document.getElementsByTagName('img');
+for (var i = 0; i < elems.length; i++) {
+	elems[i].onclick = func;
+}
+
+function func() {
+	alert(this.getAttribute('src'));
+}
+            
+        </script>
+        
+        
+        
+        
+    </body>
+</html>

@@ -1,0 +1,53 @@
+<html>
+	<body>
+		
+		<style>
+			.cities {
+				display: none;
+			}
+			.active.cities {
+				display: inline-block;
+			}
+		</style>
+		
+	    <select id="countries">
+			<option value="kz">Kazakhstan</option>
+			<option value="sp">Spain</option>
+			<option value="ru">Russia</option>
+		</select>
+		<select id="kz" class="cities active">
+			<option>Astana</option>
+			<option>Almaty</option>
+		</select>
+		<select id="sp" class="cities">
+			<option>Valencia</option>
+			<option>Madrid</option>
+		</select>
+		<select id="ru" class="cities">
+			<option>Moscow</option>
+			<option>Piter</option>
+		</select>
+		
+		<script>
+		
+		var countries = document.getElementById('countries');
+		var kzcities = document.getElementById('kz');
+		var spcities = document.getElementById('sp');
+		var rucities = document.getElementById('ru');
+		
+		countries.addEventListener('change', function(){
+			document.querySelector('.active.cities').classList.remove('active');
+			if(this.value == 'kz'){
+				kzcities.classList.add('active');
+			}
+			if(this.value == 'sp'){
+				spcities.classList.add('active');
+			}
+			if(this.value == 'ru'){
+				rucities.classList.add('active'); 
+			}
+			})
+			
+		</script>
+	</body>
+</html>

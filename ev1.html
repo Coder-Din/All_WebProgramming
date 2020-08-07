@@ -1,0 +1,15 @@
+<html>
+	<body id="elem">
+		<script>
+		
+		var elem = document.getElementById('elem');
+
+        elem.onmousemove = func;
+
+        function func(event) {
+	       this.innerHTML = event.pageX + ':' + event.pageY;
+        }
+			
+		</script>
+	</body>
+</html>

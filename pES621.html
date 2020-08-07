@@ -1,0 +1,14 @@
+<p id="id1">1</p>
+<p id="id2">2</p>
+<p id="id3">3</p>
+<script>
+
+let elems = document.querySelectorAll('p');
+//let entries;
+	
+entries = elems.entries();
+for (let [num, {id, innerHTML}] of entries) {
+	console.log(num, id, innerHTML)
+}
+
+</script>

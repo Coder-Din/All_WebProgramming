@@ -1,0 +1,77 @@
+<html>
+    <body>
+        <script>
+        
+    function start() {
+	//По нажатию на кнопку наш таймер начнет работать:
+    window.setInterval(timer, 1000);
+}
+
+//Эта функция будет запускаться каждую секунду
+    function timer() {
+	var elem = document.getElementById('test');
+	elem.value = parseInt(elem.value)+1; //parseInt преобразует строку в число
+}
+        
+////////////////////////////////////////////////        
+        
+   function test() {
+	timerId = window.setInterval(timer, 1000);
+	alert(timerId); //выведет номер таймера
+}
+
+//Ничего не делает, просто заглушка
+    function timer() {
+
+}     
+        
+////////////////////////////////////////////////
+            
+    function start() {
+	window.timerId = window.setInterval(timer, 1000);
+}
+//Эта функция останавливает таймер
+function stop() {
+	window.clearInterval(window.timerId);
+}
+
+//Эта функция меняет value для инпута
+function timer() {
+	var elem = document.getElementById('test');
+	elem.value = parseInt(elem.value)+1;
+}        
+     
+/////////////////////////////////////////////// 
+            
+ function start() {
+	window.setTimeout(func, 3000);//сработает через 3 секунды
+}
+function func() {
+	alert('!');
+}  
+    
+////////////////////////////////////////////////  
+            
+   function timer() {
+	var elem = document.getElementById('test');
+	elem.value = parseInt(elem.value)+1;
+
+	window.setTimeout(timer, 1000); //рекурсия
+}         
+            
+///////////////////////////////////////////////
+            
+            function timer() {
+	var elem = document.getElementById('test'); //получаем наш инпут
+	elem.value = parseInt(elem.value)+1; //увеличиваем значение атрибута на единицу
+
+	if(elem.value < 10) { //если в инпуте меньше 10-ти - то работаем дальше
+		//Функция timer запускает саму себя с задержкой в 1 секунду:
+		window.setTimeout(timer, 1000);
+	}
+}
+   
+//////////////////////////////////////////////            
+        </script>
+    </body>
+</html>

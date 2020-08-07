@@ -1,0 +1,20 @@
+<html>
+	<body>
+		<p>Top Neightbour</p>
+		<div id="elem">random</div>
+		<p>bottom  Neightbour</p>
+		<p>Super bottom Neightbour</p>
+		
+		
+		<script>
+		var elem = document.getElementById('elem');
+    
+        var prev = elem.nextElementSibling;
+		var prevprev = prev.nextElementSibling;
+        prevprev.innerHTML += '!';
+		</script>
+		
+		
+		
+	</body>
+</html>

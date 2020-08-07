@@ -1,0 +1,19 @@
+<html>
+	<body>
+		<img src="surfing.jpg"  class="images" style="height: 30px;">
+		<img src="arrowright.jpg"  class="images" style="height: 30px;">
+		<img src="bees.jpg"  class="images" style="height: 30px;">
+		<img src="bridge-img%20itg.jpg"  class="images" style="height: 30px;">
+		<img  id="task" style="height:50px;">
+		<script>
+	 	var image = document.getElementsByClassName('images');
+	    for (var i = 0; i < image.length; i++) {
+	       image[i].addEventListener('click', size);
+        }
+	    function size(){
+			var bigImg = document.getElementById('task');
+	        bigImg.src = this.src;
+		}
+		</script>
+	</body>
+</html>

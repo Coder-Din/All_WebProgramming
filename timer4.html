@@ -1,0 +1,26 @@
+<html>
+    <body>
+        
+      <input type="text" value="10" id="test">
+      <input type="submit" onclick="start()">  
+       
+       
+       
+       <script> 
+       function start() {
+	   window.timerId = window.setInterval(timer, 1000);
+}
+
+
+    function timer() {
+	var elem = document.getElementById('test');
+	elem.value = parseInt(elem.value)-1; 
+    
+        if(elem.value == 0){
+              window.clearInterval(window.timerId); 
+        }
+    }
+        </script>   
+        
+    </body>
+</html>

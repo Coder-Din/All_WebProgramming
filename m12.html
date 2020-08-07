@@ -1,0 +1,19 @@
+<html>
+	<body>
+		
+	<div id="elem" style="height: 100px;width: 100px;border: 10px solid black;padding: 10px;overflow: auto;">
+	<p>Lorem ipsum dolorsit amet consectetur adipiscing elit. Sed viverra mollis lorem, fringilla dapibus nisi commodo interdum. Vivamus in turpis quis purus dapibus aliquam id nec velit. In at aliquet sem, a rutrum neque. Vestibulum posuere lobortis accumsan. Etiam non tincidunt erat, vel condimentum turpis</p>
+	</div>
+	<button onclick="realheight()">click me!</button>
+	
+	<script>
+	
+	var elem = document.getElementById('elem');
+	
+    function realheight(){
+		alert(elem.scrollHeight);
+	}
+	</script>
+	
+	</body>
+</html>

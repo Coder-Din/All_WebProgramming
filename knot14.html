@@ -1,0 +1,15 @@
+<html>
+	<body>
+		<div id="elem"><p>Hello</p><p>BIe</p><p>HIe</p><span></span></div>
+		<script>
+		var elem = document.getElementById('elem');
+		for(let i = 0; i < elem.childNodes.length; i++){
+		console.log(elem.childNodes[i]);
+		}
+	    let arr = Array.from(elem.childNodes);
+		for(let i = 0; i < arr.length; i++){
+		console.log(arr[i]);
+		}
+		</script>
+	</body>
+</html>

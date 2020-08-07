@@ -1,0 +1,18 @@
+<html>
+	<body>
+		<div id="block" style="background-color: red; padding: 20px;">
+			<button id="button">Close</button>
+		</div>
+		
+		<script>
+		var button = document.getElementsByTagName('button');
+for (var i = 0; i < button.length; i++) {
+	button[i].addEventListener('click', func)
+}
+
+function func() {
+	this.parentNode.style.display = 'none';
+}
+		</script>
+	</body>
+</html>

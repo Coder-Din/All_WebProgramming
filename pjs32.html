@@ -1,0 +1,16 @@
+<html>
+	<body>
+		<p id="text" style="color: green">A color changing text</p>
+	<script>
+	var text = document.getElementById('text');
+	window.setInterval(multicolor, 1000);
+	function multicolor(){
+		if(text.style.color == 'green'){
+			text.style.color = 'red';
+		}else{
+			text.style.color = 'green';
+		}
+	}
+	</script>	
+	</body>
+</html>

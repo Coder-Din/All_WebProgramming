@@ -1,0 +1,20 @@
+<html>
+	<body>
+		
+		<input class="elem" onBlur="clone()">
+		<div  id="parent"></div>
+		<button>click me!</button>
+		<script>
+		
+			var parent = document.getElementById('parent');
+            var elem = document.querySelector('.elem');
+            function clone(){
+            var clone = elem.cloneNode(true);
+            parent.appendChild(clone);
+			}
+		
+		</script>
+		
+		
+	</body>
+</html>

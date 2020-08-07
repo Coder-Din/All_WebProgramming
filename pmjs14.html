@@ -1,0 +1,64 @@
+<html>
+<body>
+<style>
+	#maindiv{
+		border: 1px solid green;
+		width: 350px;
+		border-radius: 10px;
+		padding: 10px;
+		text-align: justify;
+		margin: auto;
+	}
+	.heading{
+		display: inline-block;
+		background-color: grey;
+		padding: 10px;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+	}
+	#greenhead{
+		background-color: green;
+	}
+</style>
+		<div id="maindiv">
+			<ul>
+				<li class="heading" id="js" style="background-color: green"><strong>JavaScript</strong></li>
+				<li class="heading" id="jq"><strong>Jquery</strong></li>
+				<li class="heading" id="dom"><strong>DOM</strong></li>
+				<li class="heading" id="css"><strong>CSS</strong></li>
+			</ul>
+			<div id="js1" class="dtext"><p>JavaScript — прототипно-ориентированный сценарный язык программирования. Является реализацией языка ECMAScript.</p>
+			<p>JavaScript обычно используется как встраиваемый язык для программного доступа к объектам приложений. Наиболее широкое применение находит в браузерах как язык сценариев для придания интерактивности веб-страницам.</p></div>
+			<div id="jq1" class="dtext"><p>jQuery — библиотека JavaScript, фокусирующаяся на взаимодействии JavaScript и HTML. Библиотека jQuery помогает легко получать доступ к любому элементу DOM, обращаться к атрибутам и содержимому элементов DOM, манипулировать ими. Также библиотека jQuery предоставляет удобный API для работы с AJAX. Сейчас разработка jQuery ведётся командой jQuery во главе с Джоном Резигом.</p></div>
+			<div id="dom1" class="dtext"><p>DOM — это не зависящий от платформы и языка программный интерфейс, позволяющий программам и скриптам получить доступ к содержимому HTML-, XHTML- и XML-документов, а также изменять содержимое, структуру и оформление таких документов.</p></div>
+			<div id="css1" class="dtext">CSS — формальный язык описания внешнего вида документа, написанного с использованием языка разметки.</div>
+		</div>
+    <script>
+	var heading = document.getElementsByClassName('heading');
+	var js = document.getElementById('js');
+	var jq = document.getElementById('jq');
+	var dom = document.getElementById('dom');
+	var css = document.getElementById('css');
+	var dtext = document.getElementsByClassName('dtext');
+	for(let i = 0; i < heading.length; i++){
+		heading[i].addEventListener('click', changer);
+	}
+	jq1.style.display = 'none';
+	dom1.style.display = 'none';
+	css1.style.display = 'none';
+	
+	function changer(){
+	    for(let i = 0; i < heading.length; i++){
+		    heading[i].style.backgroundColor = 'grey';
+	    }
+	    this.style.backgroundColor = 'green';
+		for(let i = 0; i < dtext.length; i++){
+			dtext[i].style.display = 'none';
+		}
+		var divid = this.id + 1;
+		var divid1 = document.getElementById(divid);
+		divid1.style.display = 'block';
+	}
+	</script>
+</body>
+</html>

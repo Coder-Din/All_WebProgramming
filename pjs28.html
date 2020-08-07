@@ -1,0 +1,26 @@
+<html>
+	<body>
+		<input type="text" id="inp">
+		<button onclick="generate()"></button>
+	<script>
+	var inp = document.getElementById('inp');
+	var symbol = '1234567890abcdefghijklmnopqrstuvwxyz';
+	var symbols = symbol.split('');
+	var word = '';
+		
+	function randomInteger(min, max) {
+    let rand = min - 0.5 + Math.random() * (max - min + 1);
+    return Math.round(rand);
+    }
+	
+		
+	function generate(){
+		for(i = 0; i < 8; i++){
+			var ranSym = randomInteger(0, symbols.length);
+			word += symbols[ranSym];
+		}
+		inp.value = word;
+	}
+	</script>
+	</body>
+</html>

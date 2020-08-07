@@ -1,0 +1,61 @@
+body, p, h1, h3 {
+    margin: 0px;
+    padding: 0px;
+}
+#wrapper{
+    width: 870px;
+    margin: 0px auto;
+}
+#header{
+    height: 200px;
+    color: white;
+}
+#header img{
+    width: 100%;
+    height: 100%;
+}
+.doski{
+    position: absolute;
+    top: 20px;
+    left: 450px;
+}
+.sale{
+    position: absolute;
+    top: 65px;
+    left: 480px;
+    font-weight: bold;
+}
+#left{
+    width: 200px;
+    float: left;
+    text-align: justify;
+    padding: 5px;
+    margin: 10px;
+}
+#left img{
+    width: 100%;
+    height: 80px;
+}
+#left p{
+    margin-bottom: 10px;
+}
+#left h3{
+    margin-top: 10px;
+}
+#content{
+    text-align: justify;
+    margin-left: 230px;
+}
+#content p{
+    margin-bottom: 10px;
+}
+#content img{
+    width: 640px;
+    height: 250px;
+    padding: 10px 0;
+}
+#footer{
+    margin-left: 230px;
+    text-align: center;
+    padding-top: 60px;
+}

@@ -1,0 +1,55 @@
+main{
+    padding: 0px 150px;
+    
+}
+.football{
+    border: 2px solid black;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    background-color: #2F7F22;
+}
+
+.swimming{
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    background-color: #4CCC36;
+}
+
+.tennis{
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    background-color: #97FF85;
+}
+
+img{
+    width: 220px;
+    height: 220px;
+    margin-left: 230px;
+    margin-top: -220px;
+}
+.df{}
+.ds{ 
+    margin-left: 460px;
+    margin-top: -220px;
+}
+.dt{
+    margin-left: 230px;
+}
+h1{
+    text-align: center;
+    font-family: 'Laila', serif;
+   
+}
+p{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+.football p,
+.tennis p{
+   margin-bottom: 20px;
+}

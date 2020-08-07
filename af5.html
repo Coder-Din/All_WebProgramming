@@ -1,0 +1,17 @@
+<html>
+	<body>
+		<script>
+		
+		var each = function(iarr, f){return f(iarr)};
+		var array = [64, 63, 267,18,319];
+		var changer = function(a){
+			var carr = [];
+			for(i = 0; i < a.length; i++){
+				carr[i] = Math.pow(a[i], 1/2)
+			}
+			return carr;
+		}
+		console.log(each(array, changer));
+		</script>
+	</body>
+</html>

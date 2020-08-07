@@ -1,0 +1,36 @@
+<html>
+    <head></head>
+	<body>
+		<select id="countries">
+			<option value="Spain">Spain</option>
+			<option value="Kazakhstan">Kazakhstan</option>
+			<option value="Russia">Russia</option>
+		</select>
+		<select id="cities">
+			<option>Valencia</option>
+			<option>Barcelona</option>
+		</select>
+		<script>
+		var countries = document.getElementById('countries');
+		countries.addEventListener('change', showcities)
+		var city = document.getElementById('cities');
+		var number = '';
+		//var tag = '';
+		var cities = {
+			'Spain': ['Valencia', 'Barcelona'],
+			'Kazakhstan': ['Astana', 'Almaty'],
+			'Russia': ['Moscow', 'Saint Petersburg'],
+		};
+		function showcities(){
+			city.innerHTML = '';
+			number = this.value;
+		    for(i = 0; i < cities[number].length; i++){
+				var tag = document.createElement('option');
+				tag.innerHTML = cities[number][i];
+				city.append(tag);
+			}
+			
+		}
+		</script>
+	</body>
+</html>

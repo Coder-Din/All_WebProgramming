@@ -1,0 +1,21 @@
+<html>
+	<body>
+		<input type="radio" class="elem" value="html">html
+		<input type="radio" class="elem" value="css">css
+		<input type="radio" class="elem" value="javascript">js
+		<input type="radio" class="elem" value="php">php
+		<p id="text"></p>
+	<script>
+	var radiobutton	= document.getElementsByClassName('elem');
+	var text = document.getElementById('text');
+	for(var i = 0; i < radiobutton.length; i++){
+		radiobutton[i].addEventListener('change', func);
+	}
+	function func(){
+		
+		text.innerHTML = this.value;
+ 	    
+	}
+	</script>
+	</body>
+</html>

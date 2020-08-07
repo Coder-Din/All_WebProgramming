@@ -1,0 +1,26 @@
+<html>
+	<body>
+		<input id="inp" type="text">
+		<script>
+		var inp = document.getElementById('inp');
+	    inp.addEventListener('blur', check3);
+		function check3(){
+			var inpv = inp.value;
+			var inpvs = inpv.split('');
+			var isThreeInside = false;
+			for(let i = 0; i < inpvs.length; i++){
+				if(inpvs[i] == 3){
+					isThreeInside = true;
+					alert('There is a three!');
+					break;
+				}
+			}
+			console.log(isThreeInside);
+			if(isThreeInside === false){
+			alert('There is no three!');
+			}
+			
+		}
+		</script>
+	</body>
+</html>

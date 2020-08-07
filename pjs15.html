@@ -1,0 +1,35 @@
+<html>
+	<body>
+		<p class="pa">4</p>
+		<p class="pa">3</p>
+		<p class="pa">5</p>
+		<p class="pa">2</p>
+		<button onclick="sortout()">Click here!</button>
+		<input type="text" id="inp">
+		<script>
+		var parag = document.getElementsByClassName('pa');
+		var inp = document.getElementById('inp');
+		var tosortout = [];
+		var sortedout = [];
+		function sortout(){
+			for(i = 0; i < parag.length; i++){
+				tosortout.push(parag[i].innerHTML);
+			}
+			sortedout = tosortout.sort(sortArr);
+			console.log(sortedout);
+			inp.value = sortedout;
+			function sortArr(a, b) {
+	if (a > b) {
+		return 1;
+	}
+	if (a < b) {
+		return -1;
+ 	}
+	if (a == b) {
+		return 0;
+ 	}
+ }
+		}
+		</script>
+	</body>
+</html>

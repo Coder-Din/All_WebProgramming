@@ -1,0 +1,14 @@
+<img src="hearteyes.png">
+<img src="angel.png">
+<img src="smileyface.png">
+<script>
+
+	let img = document.querySelectorAll('img');
+	for(let i = 0; i < img.length; i++){
+		img[i].style.width = 500;
+	}
+	setInterval( function(){ 
+		[img[0].src, img[1].src, img[2].src] = [img[1].src, img[2].src, img[0].src];   
+	}, 1000);
+
+</script>

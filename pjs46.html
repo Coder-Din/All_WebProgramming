@@ -1,0 +1,18 @@
+<html>
+	<body>
+		<input type="text" id="inp">
+		<p id="text"></p>
+	<script>
+	var inp = document.getElementById('inp');
+	var text = document.getElementById('text');
+	inp.addEventListener('keypress', countries);
+	function countries(event){
+		if(event.which == 13){
+			text.innerHTML += inp.value + ',';
+			inp.value = '';
+		}
+	}
+	
+	</script>
+	</body>
+</html>

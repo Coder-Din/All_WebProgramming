@@ -1,0 +1,18 @@
+<html>
+	<body>
+	<input type="text" id="inp">
+		<script>
+		var inp = document.getElementById('inp');
+		inp.addEventListener('blur',wordcount);
+		function wordcount(){
+			var wordnum = 0;
+			var words = inp.value.split(' ');
+			for(i = 0; i < words.length; i++){
+			wordnum += 1;
+			}
+			alert(wordnum);
+		}
+		 
+		</script>
+	</body>
+</html>

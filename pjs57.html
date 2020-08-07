@@ -1,0 +1,30 @@
+<html>
+	<body>
+	
+	<table id="table" border="1"></table>
+	<p>The table generator</p>
+	<input type="text" id="width" placeholder="Enter the width of the table">
+	<input type="text" id="height" placeholder="Enter the height of the table">
+	<button id="button">Generate</button>
+	<script>
+	var table = document.getElementById('table');
+	var width = document.getElementById('width');
+	var height = document.getElementById('height');
+	var button = document.getElementById('button');
+	button.addEventListener('click', generator);
+	function generator(){
+		var wvalue = width.value;
+		var hvalue = height.value;
+		for(let i = 0; i < height.value; i++){
+			var tr = document.createElement('tr');
+			table.appendChild(tr);
+			
+		    for(let i = 0; i < width.value; i++){
+				var td = document.createElement('td');
+				tr.appendChild(td);
+			}
+		}
+	}
+	</script>
+	</body>
+</html>

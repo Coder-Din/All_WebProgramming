@@ -1,0 +1,16 @@
+<html>
+	<body>
+		<script>
+		
+		var ggg = function(num, sq, cu){return sq(num) + cu(num)};
+		var square = function(num){
+			return num * num;
+		}
+		var cube = function(num){
+			return num * num * num;
+		}
+		var num = prompt('Choose a number');
+		console.log(ggg(num, square, cube));
+		</script>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+	<body>
+	<style>
+		.redlink{
+			background-color: red;
+		}	
+	</style>
+		<a href="#">CLick on me1</a>
+		<a href="#">CLick on me12</a>
+		<a href="#">CLick on me13</a>
+		<a href="#">CLick on me14</a>
+		<p id="text"></p>
+	<script>
+		
+	var links = document.getElementsByTagName('a');	
+	var text = document.getElementById('text');
+	for(let i = 0; i < links.length; i++){
+	links[i].addEventListener('click', redder);
+	}
+	function redder(){
+		for(let i = 0; i < links.length; i++){
+			links[i].classList.remove('redlink');
+		}
+		this.classList.add('redlink');
+		text.innerHTML = this.innerHTML;
+	}
+	</script>
+	</body>
+</html>

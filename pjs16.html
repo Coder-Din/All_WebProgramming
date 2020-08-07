@@ -1,0 +1,17 @@
+<html>
+	<body>
+		<a href="https://portal.itgen.io/" class="links">Click here</a>
+		<a href="https://portal.itgen.io/" class="links">Click here</a>
+		<a href="https://portal.itgen.io/" class="links">Click here</a>
+		<script>
+		var links = document.getElementsByClassName('links');
+	    function link(){
+			for(i = 0; i < links.length; i++){
+				links[i].innerHTML += ' ' + links[i].href;
+				console.log(links[i].innerHTML);
+			}
+		}
+		link();
+	    </script>
+	</body>
+</html>

@@ -1,0 +1,49 @@
+<html>
+	<body>
+	
+	<span>12% a year</span><br>
+	<span>Value:</span><input type="text" onchange="pValue()" id="pVal"><br>
+	<span>Time in months:</span>
+	<select onchange="pTime()" id="sel">
+	<option>3</option>
+	<option>6</option>
+	<option>9</option>
+	<option>12</option>
+	<option>15</option>
+	</select>
+	<p id="before">Was: </p>
+	<p id="after">After: </p>
+	<p>With capitalisation:</p><input type="checkbox" id='cBox' onchange="pTime()">
+	<script>
+		
+		var pVal = document.getElementById('pVal');
+		var selecct = document.getElementById('sel');
+		var before = document.getElementById('before');
+		var after = document.getElementById('after');
+		var cBox = document.getElementById('cBox');
+		var inpV = 0;
+		var outV = 0;
+		var bTime = 0;
+		function pValue(){
+			inpV = pVal.value;
+			before.innerHTML = 'After:' + inpV;
+		}
+		function pTime(){
+			if(cBox.checked == false){
+			bTime = selecct.value;
+			iCalc()
+			}else{
+			outV = inpV
+			for(var i = 0; i < bTime; i++){
+				outV = outV	 * 1.01;
+			}
+			after.innerHTML = 'After:' + Math.floor(outV);
+			}
+		}
+		function iCalc(){
+			outV = Number(inpV) * (1 + Number((1 * bTime)/100));
+			after.innerHTML = 'After:' + Math.floor(outV);
+		}
+	</script>	
+	</body>
+</html>

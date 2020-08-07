@@ -1,0 +1,19 @@
+<html>
+	<body>
+		<p class="pa"></p>
+		<p class="pa"></p>
+		<p class="pa"></p>
+		<p class="pa"></p>
+		<button onclick="justfunc()">Click here!</button>
+	<script>
+		var parag = document.getElementsByClassName('pa');
+		function justfunc(){
+		for(let i = 0; i < parag.length; i++){
+			parag[i].innerHTML = i + 1;
+			console.log(parag[i]);
+		}
+		}
+	</script>
+		
+	</body>
+</html>

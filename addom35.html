@@ -1,0 +1,20 @@
+<html>
+	<body>
+		<div style="background-color: red">
+		<button onclick="hide()" id="elem">Click me!</button>
+		</div>
+		<script>
+		
+		function hide(){
+		
+		var elem = document.getElementById('elem');
+        var parent = elem.parentElement;
+       	parent.remove();
+		}
+			
+		</script>
+		
+		
+		
+	</body>
+</html>

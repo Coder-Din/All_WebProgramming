@@ -1,0 +1,16 @@
+<html>
+	<body>
+		<input value="1" class="inputs"><input value="2" class="inputs"><input value="3" class="inputs"><button onclick="sum()"></button><input id="input4">
+		<script>
+		var input = document.getElementsByClassName('inputs');
+		var input4 = document.getElementById('input4');
+		var sumnumb	= 0;
+		function sum(){
+			for(var i = 0; i < input.length; i++){
+				sumnumb += +input[i].value;
+			}
+			input4.value = sumnumb;
+		}
+		</script>
+	</body>
+</html>

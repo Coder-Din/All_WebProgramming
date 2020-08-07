@@ -1,0 +1,46 @@
+<html>
+	<body>
+		<table>
+	<tr>
+		<td class="tab">25</td>
+		<td class="tab">11</td>
+		<td class="tab">8</td>
+	</tr>
+	<tr>
+		<td class="tab">54</td>
+		<td class="tab">13</td>
+		<td class="tab">22</td>
+	</tr>
+	<tr>
+		<td class="tab">15</td>
+		<td class="tab">23</td>
+		<td class="tab">6</td>
+	</tr>
+       <tr>
+		<td class="tab" id="1">0</td>
+		<td class="tab" id="2">0</td>
+		<td class="tab" id="3">0</td>
+	</tr>
+        </table>
+        <script>
+			var tab = document.getElementsByClassName('tab');
+			var st = document.getElementsByTagName('tr');
+			var num = 0;
+			var sumnum = 0;
+			
+			for(i = 0; i < tab.length; i++){
+				tab[i].addEventListener('click', sumit);
+			}
+			function sumit(){
+				if(this.innerHTML == 0){
+				 num = this.id - 1;
+				 for(let j = 0; j < st[num].children.length; j++){
+					 sumnum += Number(st[num].children[j].innerHTML);
+				 }
+				 this.innerHTML = sumnum;
+				 sumnum = 0;
+				 }
+			}
+		</script>
+	</body>
+</html>

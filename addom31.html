@@ -1,0 +1,21 @@
+<html>
+	<body>
+		
+		<input class="elem">
+		<button onclick="clone()">+</button>
+		
+		<div  id="parent"></div>
+		<script>
+		
+			var parent = document.getElementById('parent');
+            var elem = document.querySelector('.elem');
+            function clone(){
+            var clone = elem.cloneNode(true);
+            parent.appendChild(clone);
+			}
+		
+		</script>
+		
+		
+	</body>
+</html>

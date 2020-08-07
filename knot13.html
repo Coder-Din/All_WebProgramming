@@ -1,0 +1,11 @@
+<html>
+	<body>
+		<div id='div'><!--comment--><span>span</span> text </div>
+		<script>
+		div = document.getElementById('div');
+		for(i = 0; i < div.childNodes.length; i++){
+			alert(div.childNodes[i] + div.childNodes[i].nodeName);
+		}
+		</script>
+	</body>
+</html>

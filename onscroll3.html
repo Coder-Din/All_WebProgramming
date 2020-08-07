@@ -1,0 +1,49 @@
+<html>
+    <style>
+	
+	#divv{
+		width: 400px;
+		margin: auto;
+	}
+	
+	</style>
+	<body>
+		<div id="divv">
+			<span>This is a text</span>
+			
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<span>This is a text</span>
+			<img src="placeholder.svg" width="400" height="400" data-src='jupiter.jpg' id="fimg">
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<span>This is a text</span>
+			<img src="placeholder.svg" width="400" height="400" data-src='mars.jpg' id="mimg">
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<span>This is a text</span>
+			<img src="placeholder.svg" width="400" height="400" data-src='moon.jpg' id="limg">
+		</div>
+	</body>
+	<script>
+	
+	var fimg = document.getElementById('fimg');
+	var mimg = document.getElementById('mimg');
+	var limg = document.getElementById('limg');	
+	window.addEventListener('scroll', imgappear);
+    function imgappear(){
+		let windowRelativeTop = document.documentElement.getBoundingClientRect().top;
+		if(windowRelativeTop < fimg.getBoundingClientRect().top){
+			let dfsrc = fimg.getAttribute('data-src');
+			fimg.setAttribute('src', dfsrc)
+		}
+		if(windowRelativeTop < mimg.getBoundingClientRect().top){
+			let dmsrc = mimg.getAttribute('data-src');
+			mimg.setAttribute('src', dmsrc)
+		}
+		if(windowRelativeTop < limg.getBoundingClientRect().top){
+			let dlsrc = limg.getAttribute('data-src');
+			limg.setAttribute('src', dlsrc)
+		}
+	}
+	
+	
+	</script>
+</html>

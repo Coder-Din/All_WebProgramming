@@ -1,0 +1,21 @@
+<html>
+	<body>
+		<input type="text" id="inp" onblur="secleft()">
+		<p id="text"></p>
+    <script>
+	var inp = document.getElementById('inp');
+	var text = document.getElementById('text');
+	var secondsleft = 0;
+	function secleft(){
+		secondsleft = inp.value;
+		text.innerHTML = secondsleft;
+		window.setInterval(backcountdown, secondsleft);
+	}
+	function backcountdown(){
+		if(text.innerHTML > 0){
+		text.innerHTML -= 1;
+		}
+	}
+	</script>
+	</body>
+</html>

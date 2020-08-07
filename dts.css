@@ -1,0 +1,131 @@
+body{
+    padding:  60px 0px;
+    margin: 0px;
+    background-color: sandybrown;
+}
+h1,h2,h3,p,span,ol,ul{
+    margin: 0;
+    padding: 0;
+}
+#wrapper{
+    width: 960px;
+    margin: 0 auto;
+    background-color: white;
+    height: 1400px;
+}
+#title{
+    background-color: sandybrown;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+#title h1{
+    color: white;
+    padding-left: 20px;
+}
+#title span{
+    color: gray;
+    margin-top: 20px;
+    padding-right: 20px;
+}
+header li{
+    width: 20%;
+    text-align: center;
+    
+}
+header ul{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: black;
+    color: white;
+      
+    margin: 15px;
+}
+header a{
+    display: block;
+    padding: 20px;
+}
+header a:hover{
+    background-color: gray;
+}
+img{
+    margin: 0 15px 15px 15px;
+}
+.left{
+    width: 560px;
+    margin-left: 30px;
+    float: left;
+}
+#lts h1{
+    color: sandybrown;
+}
+#lts{
+    margin-bottom: 40px;
+}
+.a{
+    color: green;
+}
+.pt{
+    margin-bottom: 40px;
+}
+.left span{
+    border-right: 1px solid black;
+    padding-right: 5px;
+}
+.right{
+    width: 290px;
+    float: right;
+    margin-right: 40px;
+}
+a{
+    color: green;
+}
+.rb{
+    background-color: grey;
+    width: 100%;
+    height: 230px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.hrb{
+    background-color: blue;
+    color: white;
+}
+.hrb h2{
+    padding: 10px;
+}
+li{
+    list-style: none;
+}
+.rtext li{
+    padding-top: 15px;
+    padding-left: 10px;
+}
+.rtext p{
+    padding-top: 20px;
+    line-height: 30px;
+    padding-left: 10px;
+}
+footer{
+    background-color: greenyellow;
+    
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 70px;
+    text-align: center;
+    
+    
+}
+footer span{
+    line-height: 70px;
+}
+.clearfix{
+    clear: both;
+}
+

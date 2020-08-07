@@ -1,0 +1,105 @@
+<html>
+    <style>
+		#maindiv{
+			width: 400px;
+			margin: auto;
+		}
+		#inpdiv{
+			border: 1px solid black;
+			margin: 4px;
+		
+			
+		}
+		.secdiv{
+			border: 1px black solid;
+			height: 32px;
+		}
+		input[placeholder="Enter task"]{
+			width: 388px;
+		}
+		.vertcenter{
+			line-height: 32px;
+		}
+		.imgclass{
+			height: 28px;
+			width: 28px;
+		    position: absolute;
+		    
+			
+	    }
+	</style>
+	<body>
+		<div id="maindiv">
+		
+		<div class="secdiv">
+			<div id="inpdiv">
+				<input type="text" placeholder="Enter task" id="inp">
+			</div>
+		</div>
+		
+		</div>
+		<script>
+		var maindiv = document.getElementById('maindiv');
+		var secdiv = document.getElementsByClassName('secdiv');
+		var inp = document.getElementById('inp');
+		var task;
+		var inum = 0;
+		inp.addEventListener('keyup', funcc);
+			
+		window.timerId = window.setInterval(checker, 1000);
+	    	function checker(){
+			var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+			var lilist = document.getElementsByTagName('li');
+			var divess = document.getElementsByClassName('secdiv');
+			var imagess = document.getElementsByTagName('img');
+			for(let i = 0; i < checkboxes.length; i++){
+				if(checkboxes[i].checked == true){
+					checkboxes[i].checked = false;
+					checkboxes[i].style.visibility = 'hidden';
+					lilist[i].style.textDecoration = 'line-through';
+				}
+			}
+			for(let j = 0; j < imagess.length; j++){
+				imagess[j].addEventListener('click', remover);
+			}
+		}
+			
+		function funcc(event){
+			if(event.keyCode == 13){
+		    taskadder()
+		    }
+		}
+		function taskadder(){
+			
+			
+			task = inp.value;
+			var divu = document.createElement('div');
+			divu.classList.add('secdiv');
+			var inpu = document.createElement('input');
+			inpu.type = 'checkbox';
+			var list = document.createElement('li');
+			list.style.listStyleType = 'none';
+			var redx = document.createElement('img');
+			var redcross = new Image(50, 50);
+			var labe = document.createElement('label');
+			redcross.src = 'redcross.jpg';
+			redx.src = redcross.src;
+			redx.classList.add('imgclass');
+			//redx.onclick = remover;
+			
+			list.appendChild(inpu);
+			list.innerHTML += task;
+			list.appendChild(redx);
+	        list.classList.add('vertcenter');
+			divu.appendChild(list);
+			maindiv.appendChild(divu);
+			inp.value = '';
+		}
+		function remover(){
+			maindiv.removeChild(this.parentElement.parentNode);
+		}
+		
+	
+		</script>
+	</body>
+</html>

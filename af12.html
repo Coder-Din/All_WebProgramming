@@ -1,0 +1,26 @@
+<html>
+	<body>
+		
+		<button id="button">Click</button>
+		
+		<script>
+		
+		var button = document.getElementById('button');
+		var func = function(){
+			var used = [];
+			var rnum = 	Math.round(Math.random() * 100);
+			
+			for(let i = 0; i < used.length; i++){
+				if(used[i] == rnum){
+					func();
+					break;
+				}
+			}
+			used.push(rnum);
+			console.log(rnum);
+		}
+		button.addEventListener('click', func);
+		</script>
+		
+	</body>
+</html>

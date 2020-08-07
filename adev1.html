@@ -1,0 +1,34 @@
+<html>
+	<body>
+	
+	<ul id="ul">
+	<li>пункт 1</li>
+	<li>пункт 2</li>
+	<li>пункт 3</li>
+	<li>пункт 4</li>
+	<li>пункт 5</li>
+    </ul>
+    <button id="button">Добавить li</button>
+	
+	<script>
+		
+	var ul = document.getElementById('ul');
+
+    ul.addEventListener('click', addSign);
+    function addSign() {
+	   event.target.innerHTML = event.target.innerHTML + '!';
+    }
+
+
+    var button = document.getElementById('button');
+    button.addEventListener('click', addLi);
+    function addLi() {
+	var li = document.createElement('li');
+	li.innerHTML = 'пункт';
+	ul.appendChild(li);
+    }
+		
+	</script>	
+	
+	</body>
+</html>

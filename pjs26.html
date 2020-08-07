@@ -1,0 +1,21 @@
+<html>
+	<body>
+		<p class="text">Text</p>
+		<p class="text">Text</p>
+		<p class="text">Text</p>
+		<p class="text">Text</p>
+		<input type="text" id="inp">
+	<script>
+	var text = document.getElementsByClassName('text');
+	var inp = document.getElementById('inp');
+	var num = 0;
+	for(i = 0; i < text.length; i++){
+		text[i].addEventListener('click',add);
+	}
+	function add(){
+		num++;
+		inp.value = num;
+	}
+	</script>	
+	</body>
+</html>

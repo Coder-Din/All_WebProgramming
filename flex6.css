@@ -1,0 +1,30 @@
+.header{
+    background-color: blue;
+    width: 600px;
+    border: 1px solid black;
+    margin: 0 auto;
+    text-align: center;
+}
+a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+li:hover {
+     background-color: white;
+}
+ul{
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    justify-content: flex-end;
+    align-items: center;
+}
+li{
+    list-style: none;
+    border: 1px solid red;
+}
+li:hover a{
+    color: blue;
+}

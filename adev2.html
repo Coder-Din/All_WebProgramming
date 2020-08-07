@@ -1,0 +1,42 @@
+<html>
+	<body>
+		<table id="tablet">
+		
+		<tr>
+			<th>Name</th>
+			<th>Surname</th>
+		</tr>
+		<tr>
+			<td>Dinmukhamed</td>
+			<td>Iskakov</td>
+		</tr>
+		
+		</table>
+		<button id="buttom">Add new user</button>
+		<script>
+		
+		var tablet = document.getElementById('tablet');
+		tablet.addEventListener('click',prommpt);
+		
+		function prommpt(event){
+			var rprom = prompt('Change the text');
+		    event.target.innerHTML = rprom;
+		}
+		
+		var buttom = document.getElementById('buttom');
+		buttom.addEventListener('click', addNewUser);	
+		function addNewUser(){
+			var tr =  document.createElement('tr');
+			var td1 =  document.createElement('td');
+			var td2 =  document.createElement('td');
+			td1.innerHTML = 'New username';
+			td2.innerHTML = 'New surname';
+			tablet.appendChild(tr);
+			tr.appendChild(td1)
+			tr.appendChild(td2)
+		}
+			
+		</script>
+	
+	</body>
+</html>

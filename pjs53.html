@@ -1,0 +1,40 @@
+<html>
+<head></head>
+	<body>
+	<style>
+		.hidden{
+			visibility: hidden;
+		}	
+	</style>
+		<p id="0">Spain</p>
+		<ul class='hidden'>
+			<li>Valencia</li>
+			<li>Real Madrid</li>
+			<li>Barcelona</li>
+		</ul>
+		<p id="1">Kazakhstan</p>
+		<ul class='hidden'>
+			<li>Astana</li>
+			<li>Almaty</li>
+			<li>Karaganda</li>
+		</ul>
+		<p id="2">Russia</p>
+        <ul class='hidden'>
+        	<li>Moscow</li>
+        	<li>Saint Petersburg</li>
+        	<li>Novosibirsk</li>
+        </ul>
+      <script>
+	  var text = document.getElementsByTagName('p');
+	  var list = document.getElementsByTagName('ul');
+	  var numb = 0;
+	  for(let i = 0; i < text.length; i++){
+		  text[i].addEventListener('click', unhide);
+	  }
+	  function unhide(){
+		  numb = Number(this.id);
+		  list[numb].classList.remove('hidden');
+	  }
+	  </script>
+	</body>
+</html>

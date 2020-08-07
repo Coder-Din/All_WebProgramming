@@ -1,0 +1,22 @@
+<html>
+	<body>
+		
+		<ol>
+			<li id="li"><button onclick="rchild()">1st li</button></li>
+			<li id="li"><button onclick="rchild()">2nd li</button></li>
+			<li id="li"><button onclick="rchild()">3rd li</button></li>
+			<li id="li"><button onclick="rchild()">4th li</button></li>
+			<li id="li"><button onclick="rchild()">5th li</button></li>
+		</ol>
+		
+		<script>
+		
+		
+		function rchild(){
+			var liid = document.getElementById('li');
+			liid.remove();
+		}
+		</script>
+		
+	</body>
+</html>

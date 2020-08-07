@@ -1,0 +1,59 @@
+<html>
+	<body>
+		<html>
+	<body>
+	<style>
+		.redtab{
+			background-color: red;
+		}
+	</style>
+	<table>
+	<tr>
+		<td class="tab">25</td>
+		<td class="tab">11</td>
+		<td class="tab">8</td>
+	</tr>
+	<tr>
+		<td class="tab">54</td>
+		<td class="tab">13</td>
+		<td class="tab">22</td>
+	</tr>
+	<tr>
+		<td class="tab">15</td>
+		<td class="tab">23</td>
+		<td class="tab">6</td>
+	</tr>
+    </table>
+     <button onclick="redsum()">Red tabs sum</button>
+    <p></p>
+    <button onclick="clearred()">Clear all the red</button>
+        <script>
+			var tab = document.getElementsByClassName('tab');
+			var text = document.getElementsByTagName('p');
+			var rtnum = 0;
+			for(let i = 0; i < tab.length; i++){
+				tab[i].addEventListener('click', redder);
+			}
+			function redder(){
+				this.classList.add('redtab');
+			}
+			function redsum(){
+				var redtabs = document.getElementsByClassName('redtab');
+				for(let i = 0; i < redtabs.length; i++){
+					rtnum += Number(redtabs[i].innerHTML);
+				}
+				text[0].innerHTML = rtnum;
+			}
+			function clearred(){
+				var redtabs = document.getElementsByClassName('redtab');
+				console.log(redtabs);
+				for(let i = 0; i < redtabs.length; i++){
+					redtabs[i].classList.remove('redtab');
+					
+				}
+			}
+		</script>
+	</body>
+</html>
+	</body>
+</html>

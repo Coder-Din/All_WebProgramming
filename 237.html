@@ -1,0 +1,29 @@
+<html>
+    <body>
+        
+        
+  <p>7</p>
+  <p>8</p>
+  <p>9</p>
+
+
+<script>
+var elems = document.getElementsByTagName('p');
+
+for (var i = 0; i < elems.length; i++) {
+	elems[i].addEventListener('click', func);
+}
+
+function func() {
+     this.innerHTML = this.innerHTML * this.innerHTML;
+}
+        
+        </script>    
+        
+        
+        
+        
+        
+        
+    </body>
+</html>

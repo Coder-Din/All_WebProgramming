@@ -1,0 +1,19 @@
+<html>
+	<body>
+		<input type="checkbox" id="box" onclick="test()">
+		<input type="text" id="inp" value="Hello">
+	<script>
+	var box = document.getElementById('box');
+	var inp = document.getElementById('inp');
+	inp.style.display = 'none';
+	function test(){	
+	if(box.checked == false){
+		inp.style.display = "none";
+	}else{
+		inp.style.display = "inline";
+	}
+	}
+	//test();
+	</script>
+	</body>
+</html>

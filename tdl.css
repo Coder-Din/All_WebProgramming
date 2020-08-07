@@ -1,0 +1,29 @@
+header{
+    border: 1px solid orange;
+    background-color: orange;
+}
+.white{
+    color: white;
+}
+main{
+    padding: 5% 35% 0% 35%;
+}
+.divf{
+    width: 400px;
+    height: 200px;
+}
+li{
+    border-bottom: 1px solid black;
+}
+footer{
+     border: 1px solid coral;
+     background-color: coral;
+     color: white;
+}
+img{
+    width: 40px;
+   
+}
+#right{
+    align-items: flex-end;
+}

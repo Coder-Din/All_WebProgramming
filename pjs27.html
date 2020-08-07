@@ -1,0 +1,14 @@
+<html>
+	<body>
+		<input type="text" value="2" id="inp">
+	<script>
+	var inp = document.getElementById('inp');
+	var inputValue = inp.value;
+	window.setInterval(square, 1000);
+	function square(){
+	inputValue *= inputValue;
+	inp.value = inputValue;
+	}
+	</script>
+	</body>
+</html>

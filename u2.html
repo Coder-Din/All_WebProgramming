@@ -1,0 +1,42 @@
+<html>
+	<body>
+		
+	    <form>
+			<input value="1">
+			<input value="2">
+			<input value="3">
+			<input value="4">
+		</form>
+		
+		<form>
+			<input value="1">
+			<input value="2">
+			<input value="3">
+			<input value="4">
+		</form>
+		
+		<form>
+			<input value="1">
+			<input value="2">
+			<input value="3">
+			<input value="4">
+		</form>
+		
+		<button onclick="func()"></button>
+		
+		<script>
+		
+		function func(){
+			var forms = document.forms;
+			var numb = 0;
+			for (var i = 0; i < forms.length; i++) {
+	        for (var a = 0; a < forms[i].length; a++){
+				numb += Number(forms[i][a].value);
+			}
+			}
+			alert(numb)
+		}
+		
+		</script>
+	</body>
+</html>

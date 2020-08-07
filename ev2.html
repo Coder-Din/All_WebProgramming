@@ -1,0 +1,18 @@
+<html>
+	<body>
+		
+		<p>Click anywhere!</p>
+		<div id="elem" style="border: 1px solid red;width: 100px;height: 100px;position: absolute;"></div>
+		
+		<script>
+		
+		var elem = document.getElementById('elem');
+        window.addEventListener('click',func);
+        function func(event) {
+	        elem.style.left = event.clientX + 'px';
+			elem.style.top = event.clientY + 'px';
+        }
+		
+		</script>
+	</body>
+</html>

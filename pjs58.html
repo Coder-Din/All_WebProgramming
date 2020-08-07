@@ -1,0 +1,25 @@
+<html>
+	<body>
+		<ul>
+			<li>17</li>
+			<li>8</li>
+			<li>16</li>
+			<li>-20</li>
+			<li>56</li>
+		</ul>
+		<button id="button">Sort it out</button>
+	<script>
+	var list = document.getElementsByTagName('li');
+	var button = document.getElementById('button');
+	button.addEventListener('click', sortout);
+	function sortout(){
+		var array = [];
+		for(let i = 0; i < list.length; i++){
+			array[i] = list[i].innerHTML;
+		}
+		var sarray = array.sort();
+		alert(sarray);
+	}
+	</script>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+	<body>
+		
+		<input type="button" id="button" value="Нажмите на кнопку">
+		
+		<script>
+		
+		var button = document.getElementById('button');
+
+        button.addEventListener('click', func);
+        function func(event) {
+	    if (event.ctrlKey) {
+	    this.setAttribute('style', 'background: red');
+	    }
+	    if (event.altKey) {
+		alert('нажат Alt');
+	    }
+	    if (event.shiftKey) {
+		alert('нажат Shift');
+	    }
+		}
+		
+		
+		</script>
+	</body>
+</html>

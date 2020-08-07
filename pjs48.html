@@ -1,0 +1,36 @@
+<html>
+	<body>
+		<table>
+	<tr>
+		<td class="tab">25</td>
+		<td class="tab">11</td>
+		<td class="tab">8</td>
+	</tr>
+	<tr>
+		<td class="tab">54</td>
+		<td class="tab">13</td>
+		<td class="tab">22</td>
+	</tr>
+	<tr>
+		<td class="tab">15</td>
+		<td class="tab">23</td>
+		<td class="tab">6</td>
+	</tr>
+        </table>
+        <button onclick="highestnum()"></button>
+    <script>
+		var tab = document.getElementsByClassName('tab');
+		var highnum = 0;
+		var num = 0;
+		function highestnum(){
+			for(i = 0; i < tab.length; i++){
+				if(Number(tab[i].innerHTML) > highnum){
+					highnum = Number(tab[i].innerHTML)
+					num = i;
+				}
+			}
+			tab[num].style.backgroundColor = 'red';
+		}
+	</script>
+	</body>
+</html>

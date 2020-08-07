@@ -1,0 +1,22 @@
+<html>
+	<body>
+		<input type="text" id="inp">
+		<button onclick="writedown()">Click here!</button>
+		<ul id="list"></ul>
+		<script>
+		var inp = document.getElementById('inp');
+		var list = document.getElementById('list');
+		var code = '0';
+		function writedown(){
+			var spl = inp.value.split(',');
+			alert(spl);
+			for(let i = 0; i < spl.length; i++){
+				
+				code = document.createElement('li');
+				code.innerHTML = spl[i];
+				list.appendChild(code);
+			}
+		}
+		</script>
+	</body>
+</html>

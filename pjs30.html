@@ -1,0 +1,39 @@
+<html>
+	<body>
+		<input type="text" id="inp">
+		<input type="text" id="inpask">
+		<input type="text" id="elements">
+		<button onclick="generate()"></button>
+	<script>
+	var inp = document.getElementById('inp');
+	var inpask = document.getElementById('inpask');
+	inpask.addEventListener('blur', writelength);
+	var elements = document.getElementById('elements');
+	elements.addEventListener('blur', symbolstouse);
+	var symbol = '';
+	var symbols = '';
+	var word = '';
+	var thewordlength = 0;
+	function symbolstouse(){
+		symbol = elements.value;
+		symbols = symbol.split('');
+		//alert(symbols);
+	}
+	function writelength(){
+	thewordlength = inpask.value;
+	//alert(wordlength);
+	}
+	function randomInteger(min, max) {
+    let rand = min - 0.5 + Math.random() * (max - min + 1);
+    return Math.round(rand);
+    }
+	function generate(){
+		for(i = 0; i < Number(thewordlength); i++){
+			var ranSym = randomInteger(0, symbols.length);
+			word += symbols[ranSym];
+		}
+		inp.value = word;
+	}
+	</script>
+	</body>
+</html>

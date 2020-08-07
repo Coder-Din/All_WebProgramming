@@ -1,0 +1,22 @@
+<html>
+	<body>
+		<input type="checkbox" class="box" value="text-decoration:line-through;">Cross out
+		<input type="checkbox" class="box" value="font-weight:bold;">Make it Bold
+		<input type="checkbox" class="box" value="color:red">Make it Red
+		<p id="text">Come on, Change me!</p>
+		<script>
+		var box = document.getElementsByClassName('box');
+		var text = document.getElementById('text');
+	    for(let i = 0; i < box.length; i++){
+			box[i].addEventListener('click', elements);
+		}
+		function elements(){
+		if (this.checked) {
+		    text.style.cssText = this.value;
+	    } else {
+		    text.style.cssText = 'none';
+	    }
+		}
+		</script>
+	</body>
+</html>

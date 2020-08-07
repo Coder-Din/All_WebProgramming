@@ -1,0 +1,36 @@
+<html>
+	<body>
+		<select id="inpcurrency">
+			<option value="euro">Euro</option>
+			<option value="dollar">Dollar</option>
+			<option value="ruble">Ruble</option>
+		</select>
+		<select id="outcurrency">
+			<option value="euro">Euro</option>
+			<option value="dollar">Dollar</option>
+			<option value="ruble">Ruble</option>
+		</select>
+		<input type="text" id="inp1">
+		<input type="text" id="inp2">
+		<script>
+		
+		var inp1 = document.getElementById('inp1');
+		var inp2 = document.getElementById('inp2');
+		var inpcurrency = document.getElementById('inpcurrency');
+		var outcurrency = document.getElementById('outcurrency');
+		var ivalue = inp1.value;
+		inp1.addEventListener('blur', writeinp);
+			
+		var euroExchangeRate = {'euro' : 1, 'dollar' : 0.9, 'ruble' : 0.015 };
+		
+		function writeinp(){
+			if(inpcurrency.value != outcurrency.value){
+	        ivalue = inp1.value;
+			inp2.value = euroExchangeRate[inpcurrency.value] / euroExchangeRate[outcurrency.value] * inp1.value;
+			}else{
+				alert('Choose another currency');
+			}
+		}
+		</script> 
+	</body>
+</html>

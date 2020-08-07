@@ -1,0 +1,107 @@
+<html>
+    
+    <head></head>
+    
+    <body> 
+        
+    <script>
+        
+ var toy = {
+     name: "none",
+     color: "white",
+     age: 0
+ }
+ toy.name = "James";
+ delete toy.name;
+       
+///////////////////////////////////////////////////////////////////////
+        
+    var weekDays = {
+      1: "Monday",
+      2: "Tuesday",
+      3: "Wednesday",
+      4: "Thursday",
+      5: "Friday",
+      6: "Saturday",
+      7: "Sunday"
+    }
+    console.log(weekDays[6])
+   
+    function randomRange(myMin, myMax){
+       return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin; 
+   }
+   var day = randomRange(1,7)
+   console.log(weekDays[day])
+    
+//////////////////////////////////////////////////////////////////////
+       
+    
+    let person = {
+    "name": {
+   	 "ru": "Шамякин Иван Петрович",
+    },
+    "bio": [
+   	 {
+   	   "year": "1921",
+   	   "description": "родился в крестьянской семье",
+   	   "place": "д.Корма Гомельского уезда",
+   	 },
+   	 {
+   	   "year": "1936",
+   	   "description": "начало учебы",
+   	   "place": "Гомель"
+   	 }
+    ],
+    "biblio": [
+   	 {
+   	 "year": "1949",
+   	 "work": "Глубокое течение",
+   	 },
+   	 {
+   	 "year": "1964",
+   	 "work": "Сердце на ладони",
+   	 }
+    ]
+}
+    console.log(person.name.ru)
+    console.log("год = " + person.bio[0].year)
+    console.log("place = " + person.bio[1].place)
+    console.log(person.biblio[1])
+     
+//////////////////////////////////////////////////////////////////////     
+        
+     var human = {
+       name: "Петя",
+       age: 18,
+     }   
+     console.log("Ключ:" + "name" + " значение:" + human.name)
+     console.log("Ключ:" + "age" + " значение:" + human.age)
+    
+//////////////////////////////////////////////////////////////////////            
+    
+    let people = {
+	"Маша": 15,
+    "Саша": 13,
+    "Петя": 16,
+    "Даша": 10,
+    }
+    console.log(people.Петя)
+    if(people.length == 0){
+        console.log("Обьект Пустой")
+    }
+ 
+//////////////////////////////////////////////////////////////////////            
+    
+      var myCrazyObject = {
+      "name": "A ridiculous object",
+      "some array": [7, 9, { purpose: "confusion", number: 123 }, 3.3],
+      "random animal": "Banana Shark"
+      };
+      console.log(myCrazyObject["some array"][2].number)
+        
+        
+    </script>
+        
+    </body>
+    
+</html>

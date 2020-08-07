@@ -1,0 +1,42 @@
+<html>
+
+	<body>
+	<style>
+		
+		#divv{
+			transform: scale(1);
+			border: 1px solid red;
+			width: 200px;
+			height: 100px;
+			margin: auto;
+		}	
+		#text{
+			padding: 15px;
+		}
+		
+	</style>
+	
+		<div id="divv"><p id="text">This element will get bigger as you scroll on it</p></div>
+		
+	<script>
+	var current = 1;
+	var div = document.getElementById('divv')
+	div.addEventListener('wheel', expansion)
+	function expansion(e){
+		//alert(div.style.transform)
+		//div.style.transform = 'scale(div.style.transform.scale * 1.5)';
+		e = e || window.event;
+		var delta = e.deltaY || e.detail || e.wheelDelta 
+		if(delta == 100){
+		current *= 1.5;
+		div.style.transform = 'scale(' + current + ')';
+		}else if(delta == -100){
+			current /= 1.5;
+			div.style.transform = 'scale(' + current + ')';
+		}
+		
+	}
+		
+	</script>
+	</body>
+</html>

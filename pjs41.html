@@ -1,0 +1,29 @@
+<html>
+	<body>
+		<input type="checkbox" class="boxes">
+		<p class="text">Checkbox 1</p>
+		<input type="checkbox" class="boxes">
+		<p class="text">Checkbox 2</p>
+		<input type="checkbox" class="boxes">
+		<p class="text">Checkbox 3</p>
+	<script>
+	    var boxes = document.getElementsByClassName('boxes');
+		var text = document.getElementsByClassName('text');
+		
+		for(let i = 0; i < boxes.length; i++){
+			boxes[i].addEventListener('click', test)
+			text[i].style.display = "none";
+		}
+		function test(){
+			for(i = 0; i < boxes.length; i++){
+			
+			if(boxes[i].checked == false){
+		        text[i].style.display = "none";
+	        }else{
+		        text[i].style.display = "inline";
+	        }
+	    }
+		}
+	</script>
+	</body>
+</html>

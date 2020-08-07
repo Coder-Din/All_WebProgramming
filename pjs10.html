@@ -1,0 +1,17 @@
+<html>
+	<body>
+		<input type="text" id="inp">
+		<p id="text"></p>
+		<button onclick="ag()">Click on me!</button>
+	<script>
+		var inp = document.getElementById('inp');
+		var text = document.getElementById('text');
+		var date = new Date();
+		var year = date.getFullYear();
+		function ag(){
+			var ag = year - inp.value;
+            text.innerHTML = ag;
+		}
+	</script>
+	</body>
+</html>

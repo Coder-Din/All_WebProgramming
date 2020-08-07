@@ -1,0 +1,29 @@
+<html>
+	<body>
+		
+		<div id="parent"></div>
+		
+		<script>
+			
+	    var fruits = ["Яблоко", "Апельсин", "Слива"];
+		
+		var parent = document.getElementById('parent');
+        var ul = document.createElement('ul');
+        parent.appendChild(ul);	
+		
+		for(i = 0; i <= 2; i++){
+		var li = document.createElement('li');
+		ul.appendChild(li);
+		li.innerHTML = fruits[i];
+		}
+			
+			
+		
+		
+		</script>
+		
+		
+		
+		
+	</body>
+</html>

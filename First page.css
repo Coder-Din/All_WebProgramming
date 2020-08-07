@@ -1,0 +1,54 @@
+ul{
+    float: left;
+    list-style-type: none;
+    background-color: rgb(63, 63, 63);
+    height: 50px;
+    padding-top: 25px;
+    width:100%;
+    margin-top: 0;
+}
+li{
+    float: left;
+    margin-left: 50px;
+}
+
+.menu{
+    color:gray;
+    text-decoration: none;
+}
+
+.menu:hover{
+    color:lightgray;
+    
+}
+
+body{
+    background-color: rgb(31, 31, 31);
+}
+
+img{
+    width:350px;
+    height:175px;
+    float: right;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+img:hover{
+    border:5px solid white; 
+}
+
+.Film .p{
+    margin-left:160px;
+    font-size: larger;
+    color:white;
+}
+
+.Film:hover{
+    color:yellow;
+}
+
+a{
+    text-decoration: none;
+}
+

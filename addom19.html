@@ -1,0 +1,24 @@
+<html>
+	<body>
+		
+		<div id="elem">
+			<p>Random stuff</p>
+			<p>ANother random stuff</p>
+			<p>One more random stuff</p>
+		</div>
+		
+		<script>
+		
+		
+	var elem = document.getElementById('elem');
+    var elems = elem.children;
+
+    for (var i = 0; i < elems.length; i++) {
+	elems[i].innerHTML += '!';
+}
+		
+		
+		</script>
+		
+	</body>
+</html>

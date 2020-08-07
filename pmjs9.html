@@ -1,0 +1,115 @@
+<html>
+	<body>
+	<style>
+		#popup{
+			position: fixed;
+			width: 110px;
+			height: 80px;
+			border: 1px solid grey;
+		    border-radius: 10px;
+			text-align: center;
+			left: 600px;
+			top: 270px;
+			display: none;
+	    }
+		#poptext{
+			padding-bottom: 30px;
+		}
+		#image{
+			width: 20px;
+			height: 20px;
+			padding-left: 90px;
+			
+		}
+	</style>
+	    <div id="popup">
+	        <img src="blackcross.png" id="image">
+			<p id="poptext">Hello!</p>
+			
+		</div>
+		<p>Just Text</p> 
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		<p>Just Text</p>
+		
+	</body>
+	<script>
+	var text = document.getElementsByTagName('p');
+	var popup = document.getElementById('popup');
+	var image = document.getElementById('image');
+	var num = 0;
+	image.onclick = remover;
+	window.onmousemove = popfunc;
+    function popfunc(event){
+		if(num < 1){
+		if(event.pageY > 1000){
+			popup.style.display = 'inherit';
+		}
+		}
+	}
+	function remover(){
+		
+		popup.style.display = 'none';
+		num++;
+	}
+	</script>
+</html>

@@ -1,0 +1,22 @@
+<html>
+	<body>
+		<input type="checkbox" class="elem" value="html">html
+		<input type="checkbox" class="elem" value="css">css
+		<input type="checkbox" class="elem" value="javascript">js
+		<input type="checkbox" class="elem" value="php">php
+		<p id="text"></p>
+        
+    <script>
+		var buttons = document.getElementsByClassName('elem');
+		var text = document.getElementById('text');
+		var arr = [];
+	    for(var i = 0; i < buttons.length; i++){
+		    buttons[i].addEventListener('change', func);
+	    }
+		function func(){
+			arr.push(this.value);
+			text.innerHTML = arr;
+		}
+	</script>
+	</body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+	<body>
+		
+		<ul id="parent"></ul>
+		<script>
+		
+		
+			
+         var arr = ["лишка1","лишка2","лишка3"]
+			
+		 var parent = document.getElementById('parent');
+
+         for (var i = 0; i < 3; i++) {
+	     var li = document.createElement('li');
+	     li.innerHTML = arr[i];
+	     parent.appendChild(li);
+		 }  
+		
+		var final = document.getElementsByTagName(li);
+			for(i = 0; i < final.length; i++){
+		final[i].addEventListener('click',func);
+		
+			}
+			function func(){
+			alert('1')
+		}
+		</script>
+		
+		
+		
+	</body>
+</html>

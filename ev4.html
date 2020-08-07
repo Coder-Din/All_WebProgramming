@@ -1,0 +1,22 @@
+<html>
+	<body>
+		
+		<input id="input">
+        <div id="result"></div>
+		
+		<script>
+		
+		var input = document.getElementById('input');
+        var result = document.getElementById('result');
+
+        input.onkeypress = func;
+
+        function func(event) {
+	    var code = event.keyCode;
+	    var key = String.fromCharCode(event.keyCode);
+	    result.innerHTML = 'Код: ' + code;
+        }
+		
+		</script>
+	</body>
+</html>

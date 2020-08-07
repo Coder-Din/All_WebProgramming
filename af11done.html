@@ -1,0 +1,50 @@
+<html>
+    <body>
+    <button class="prev">←</button>
+    <button class="next">→</button><br>
+    <input type="text"><br><br>
+    <button class="prev">←</button>
+    <button class="next">→</button><br>
+    <input type="text"><br>
+     <style>
+	 button {
+     width: 80px;
+     height: 50px;
+	 }
+     </style>
+
+</body>
+<script>
+     var input = document.querySelectorAll('input');
+     var prev = document.querySelectorAll('.prev');
+     var next = document.querySelectorAll('.next');
+
+     for(let i = 0; i < input.length; i++) {
+     input[i].addEventListener('change', (function () {
+     let arr = [];
+     return function () {
+     arr.push(this.value)
+     let j = arr.length - 1;
+     prev[i].addEventListener('click', function () {
+
+     if(j > 0) {
+        j--;
+     input[i].value = arr[j];
+     } else {
+        input[i].value = '';
+     }
+
+     })
+     next[i].addEventListener('click', function () {
+     if(j < arr.length - 1) {
+         input[i].value = arr[j];
+         j++;
+     } else {
+     input[i].value = arr[arr.length - 1];
+     }
+     })
+     }
+     })())
+     }
+</script>
+</html>

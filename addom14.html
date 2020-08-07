@@ -1,0 +1,23 @@
+<html>
+	<body>
+		
+		
+		
+		<ul id="parent">
+			<li id="elem"></li>
+		</ul>
+		
+		
+		<script>
+		
+		var parent = document.getElementById('parent');
+		var elem = document.getElementById('elem');
+		var li = document.createElement('li');
+        li.innerHTML = '!!!';
+		parent.insertBefore(li, elem);
+		
+		
+		</script>
+		
+	</body>
+</html>

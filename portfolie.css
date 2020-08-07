@@ -1,0 +1,31 @@
+/*#divleft{
+	width: 20%;
+	float: left;
+	background-color: darkseagreen;
+	border: 1px ridge grey;
+}
+#divright{
+	width: 20%;
+	float: right;
+	background-color: darkseagreen;
+	border: 1px ridge grey;
+}*/
+#header{
+	height: 60px;
+	background-color: #f1f1f1;
+	line-height: 60px;
+	padding: 10px;
+}
+#me{
+	font-size: 40px;
+	padding-left: 20px;
+}
+#headerlinks{
+	float: right;
+}
+#headerlinks a{
+	text-decoration: none;
+	color: grey;
+	padding: 0px 15px 0px 5px;
+	font-size: 20px;
+}

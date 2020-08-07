@@ -1,0 +1,54 @@
+#wrapper{
+    width: 1000px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+#header{
+    height: 200px;
+    border-bottom: 1px solid black;
+}
+.site{
+    position: absolute;
+    top: 5px;
+    left: 400px;
+}
+.links{
+    border: 1px solid black;
+    padding: 10px;
+    justify-content: space-between;
+    display: flex;
+    width: 600px;
+    position: absolute;
+    left: 400px;
+    top: 50px;
+}
+a{
+    text-decoration: none;
+}
+#red{
+    color: red;
+    text-decoration: underline;
+}
+.left{
+    float: left;
+    width: 200px;
+}
+#center{
+    margin: 0 200px;
+    padding: 0 20px;
+    border: 1px solid black;
+}
+.right{
+    float: right;
+    width: 200px;
+}
+#footer{
+    border: 1px solid black;
+    padding-top: 180px;
+    text-align: center;
+    font-weight: bold;  
+}
+img{
+    width: 200px;
+    height: 190px;
+}

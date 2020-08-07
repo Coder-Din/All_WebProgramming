@@ -1,0 +1,31 @@
+<html>
+    <head></head>
+    <body>
+        
+    <script>
+        
+        function randomRange(myMin, myMax) {
+
+        return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin; 
+
+       }
+        
+       var myRandom = randomRange(1, 100);
+        console.log(myRandom);
+       var answer =  prompt("Какое число я загадал?");
+        while(answer != myRandom){
+            answer = prompt("Какое число я загадал?");
+        if(answer > myRandom){
+            alert("Это число меньше!");
+        }else if(answer < myRandom){
+            alert("Это число больше!");
+        }
+        }
+        if(answer == myRandom){
+            alert("Вы угадали");
+        }
+        
+    </script> 
+        
+    </body>
+</html>

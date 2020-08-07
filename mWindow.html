@@ -1,0 +1,52 @@
+<html>
+	<body>
+		
+	<style>
+	#popup{
+			position: fixed;
+			width: 180px;
+			height: 120px;
+			border: 1px solid black;
+			text-align: center;
+			left: 600px;
+			top: 70px;
+			display: none;
+	    }	
+	</style>
+	
+		<button id="button" onclick="showPrompt('How are you?');">Click This Button!</button>
+		<div id="popup">
+			<p id="text"></p>
+			<input type="text" id="inp">
+			<button class="buttons">OK</button>
+			<button class="buttons">CANCEL</button>
+		</div>
+		
+		<script>
+		var popup = document.getElementById('popup');
+		var button = document.getElementById('button');
+		var text = document.getElementById('text');
+		var inp = document.getElementById('inp');
+		var buttons = document.getElementsByClassName('buttons');
+		for(let i = 0; i < buttons.length; i++){
+			buttons[i].addEventListener('click', alerter)
+		}
+		function alerter(){
+			if(this.innerHTML == 'OK'){
+				alert('You wrote: ' + inp.value);
+			}else{
+				alert('You wrote: null')
+			}
+			function remover(){
+				popup.style.display = 'none';
+			}
+			remover()
+		}
+		var showPrompt = function(html){
+			text.innerHTML = html;
+			popup.style.display = 'inherit';
+		}
+
+		</script>
+	</body>
+</html>

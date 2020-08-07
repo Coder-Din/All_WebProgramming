@@ -1,0 +1,21 @@
+<html>
+	<body>
+		<div class="block">gahbd hfjklhjkl</div>
+		<div class="block">fha fahfa</div>
+		<div class="block">fafd fad </div>
+		<button onclick="cutdown()">Cut down</button>
+	<script>
+	var block = document.getElementsByClassName('block');
+	var str;
+	function cutdown(){
+		for(i = 0; i < block.length; i++){
+			if(block[i].innerHTML.length > 10){
+				str = block[i].innerHTML.substr(0, 10) + '...';
+				block[i].innerHTML = str;
+				
+			}
+		}
+	}
+	</script>
+	</body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+	<body>
+	<div id="grandparent">	
+	<div id="parent">
+	<p id="elem">gdhgg</p>
+    </div>	
+    </div>	
+	
+	<script>
+
+	var elem = document.getElementById('elem');
+    var parent = elem.parentElement;
+    var grandparent = parent.parentElement;
+	grandparent.style.color = 'red';
+	document.write(grandparent.id);
+		
+	</script>
+	
+	
+	
+	</body>
+</html>

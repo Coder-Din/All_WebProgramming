@@ -1,0 +1,24 @@
+<html>
+    <body>
+        
+        
+        
+        
+             <input type="text" value="1" id="test">
+<input type="submit" value="start" onclick="start()">
+<input type="submit" value="stop" onclick="stop()">
+<script>
+
+function start() {
+	window.timerId = window.setInterval(timer, 1000);
+}
+
+function stop() {
+	window.clearInterval(window.timerId);
+}  
+        </script>       
+        
+        
+        
+    </body>
+</html>

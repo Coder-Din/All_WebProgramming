@@ -1,0 +1,19 @@
+<html>
+	<body>
+		
+		<input id="inputw">
+		<p id="pw"></p>
+		
+		<script>
+		var inputw = document.getElementById('inputw');
+		var pw = document.getElementById('pw');
+		inputw.addEventListener('keyup',func);
+		function func(event){
+			if(event.keyCode == 13){
+		     pw.innerHTML = inputw.value;
+			inputw.value = ''; 
+		    }
+		}
+		</script>
+	</body>
+</html>

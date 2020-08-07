@@ -1,0 +1,55 @@
+<html>
+	<body>
+		<ul id="ul12">
+		    <strong>Is Javasacript thesame thing as Java?</strong>
+			<li><label><input type='radio' value="Yes">Yes</label></li>
+			<li><label><input type='radio' value="No" id="ul1">No</label></li>
+			<li><input type='radio' value="It Depends">It Depends</li>
+		</ul>
+		<ul id="ul22">
+		    <strong>How many parameters can you pass in a function?</strong>
+			<li><input type='radio' value="How many is written">How many is written</li>
+			<li><input type='radio' value="Minimum 1">Minimum 1</li>
+			<li><input type='radio' value="How many you want" id="ul2">How many you want</li>
+		</ul>
+		<ul id="ul32">
+		    <strong>What is: "use strict"?</strong>
+			<li><input type='radio' value="Just a text">Just a text</li>
+			<li><input type='radio' value="Function">Function</li>
+			<li><input type='radio' value="Strict Regime" id="ul3">Strict Regime</li>
+		</ul>
+		<button id="button">Check</button>
+		<script>
+		var ul11 = document.getElementById('ul1');
+		var ul22 = document.getElementById('ul2');
+		var ul33 = document.getElementById('ul3');
+        var percentage = 0;
+		var cAnswers = 0;
+		var nAnswered = 3;
+		var button = document.getElementById('button');
+		button.addEventListener('click', checker);
+		var radios = document.querySelectorAll('input[type=radio]');
+		function checker(){
+			for(let i = 0; i < radios.length; i++){
+				if(radios[i].checked == true){
+					nAnswered--;
+				}
+			}
+			if(ul11.checked == true){
+				percentage += 33.33;
+				cAnswers += 1;
+			}
+			if(ul22.checked == true){
+				percentage += 33.33;
+				cAnswers += 1;
+			}
+			if(ul33.checked == true){
+				percentage += 33.34;
+				cAnswers += 1;
+			}
+			var wAnswers = 3 - cAnswers;
+			alert('Correct Answers: ' + cAnswers + '(' + percentage + '%' + ')' + "\n" + 'Wrong Answers: ' + wAnswers + "\n" + 'Not Answered: ' + nAnswered);
+			}
+	    </script>
+		</body>
+</html>

@@ -1,0 +1,114 @@
+ @media (min-width: 650px) and (max-width: 2400px){
+     
+     .text{
+         width: 70%;
+     }
+     .header{
+        background-color: black;
+        width: 100%;
+        padding: 20px 0;
+    }
+    .header a{
+        color: white;
+        text-decoration: none;
+        padding: 20px; 
+    }
+    main{
+        width: 100%;
+    }
+    .div1{
+        background-color: dodgerblue;
+        width: 100%;
+    } 
+    .div1 h1{ 
+        font-size: 100px;
+        color: white;
+        padding: 40px 0 40px 10px;
+    }
+    .div1 p{
+        color: darkgray;
+        margin-top: -20px;
+        font-size: 30px;
+        font-weight: bold;
+        padding: 0 0 20px 10px;
+    }
+    .div2{
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+    }
+    .div2 p{
+        color: darkgray;
+        font-size: 50px;
+    }
+    .div2r{
+        background-color: purple;
+        height: 230px;
+        width: 210px;
+    }
+    .div2r h1{
+        font-size: 80px;
+        color: white;
+        text-align: center;
+        line-height: 230px;
+    } 
+    .divu{
+        width: 100%;
+        height: 3600px;
+    }
+   .div3{
+        width: 100%;
+        height: 33.3%;
+        background-color: rebeccapurple;  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .div3 p{
+        font-size: 600px;
+        text-align: center;
+        color: white;
+    }
+    .div4{   
+        width: 100%;
+        height: 33.3%;;
+    }
+    .div5{
+        width: 100%;
+        height: 33.3%%;
+    }
+    .diva6{
+        background-color: lightgray;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        height: 200px;
+        
+    }
+    .div6{
+        width: 500px;
+    }
+    .div6r{
+        width: 500px;
+    }
+    .ha{
+        color: dodgerblue;
+        background-color: lightgray;
+    
+    }
+    h1.ha{
+        font-size: 20px;
+        font-weight: bold;
+        padding: 30px 0 10px 420px;
+        
+    }
+    .diva6 p{
+        padding-top: 10px;
+    }
+    img{
+        width: 100%;
+        height: 1200px;
+    }
+}

@@ -1,0 +1,25 @@
+<html>
+    <body>
+    <button data-attribute = 0></button>
+    <button data-attribute = 0></button>
+    <button data-attribute = 0></button>
+	<script>
+	
+	var fnum = [1,1,2, 3, 5]
+	var button = document.getElementsByTagName('button');
+	
+    var ffunc = function(){
+		fnum.push(fnum[fnum.length - 1] + fnum[fnum.length - 2]);
+	}
+	var func = function(){
+	     alert(fnum[this.dataset.attribute])
+	     this.dataset.attribute++;
+	     ffunc();
+	}
+	for(let i = 0; i < button.length; i++){
+		button[i].addEventListener('click', func);
+	}
+
+	</script>
+	</body>
+</html>

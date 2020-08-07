@@ -1,0 +1,21 @@
+<html>
+	<body>
+		<input class="inp" type="text" value="">
+		<input class="inp" type="text" value="">
+		<input class="inp" type="text" value="">
+	<script>
+	var inp = document.getElementsByClassName('inp');
+	window.setInterval(func, 1000);
+	var i = 0;
+	var num = 1;
+	function func(){
+		if(i >= inp.length){
+			i = 0;
+		}
+		inp[i].value = num;
+		i++;
+		num++;
+	}
+	</script>
+	</body>
+</html>

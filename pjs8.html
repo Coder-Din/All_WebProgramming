@@ -1,0 +1,26 @@
+<html>
+	<body>
+	<input type="text" id="inp">
+		<script>
+		var inp = document.getElementById('inp');
+		inp.addEventListener('blur',wordcount);
+		function wordcount(){
+			var highnum = 0;
+			var words = inp.value.split(' ');
+		    
+			for(i = 0; i < words.length; i++){
+			var letters = 0;
+			var iletters = words[i].split('');
+				for(j = 0; j < iletters.length; j++){
+					letters += 1;
+				}
+				if(letters > highnum){
+					highnum = letters;
+				}
+			}
+			alert(highnum);
+		}
+		 
+		</script>
+	</body>
+</html>

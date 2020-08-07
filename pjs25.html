@@ -1,0 +1,21 @@
+<html>
+	<body>
+		<p class="text">4</p>
+		<p class="text">54</p>
+		<p class="text">17</p>
+		<p class="text">9</p>
+		<button onclick="highnum()">Click on me</button>
+	<script>
+	var text = document.getElementsByClassName('text');	
+	var num = 0;
+	function highnum(){
+		for(i = 0; i < text.length; i++){
+			if(Number(text[i].innerHTML) > num){
+				num = text[i].innerHTML;
+			}
+		}
+		alert(num);
+	}
+	</script>
+	</body>
+</html>

@@ -1,0 +1,14 @@
+<html>
+	<body>
+	<input type="text" id="inp">
+	<script>
+	var inp = document.getElementById('inp');
+	inp.addEventListener('blur',reverse);
+	function reverse(){
+	var spl = inp.value.split('.');
+	var spl = spl.reverse();
+	inp.value = spl.join('.');
+	}
+	</script>
+	</body>
+</html>

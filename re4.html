@@ -1,0 +1,45 @@
+<script>
+
+//console.log('hfsdjkhf aaab'.replace(/aaa(?=b)/g, '!'))
+
+//console.log('hfsdjkhf aaab aaax'.replace(/aaa(?!b)/g, '!'))
+
+	
+/*var result = '2 3 4 5'.replace(/\d+/g, function (match) {
+	return match*match;
+ });
+alert(result);*/
+	
+/*var result = "2aaa'3'bbb'6'".replace(/\d+(?=')/g, function (match){
+	return match * 2;
+});
+alert(result)*/
+
+/*var result = 'gsgfs{{text}} fsfs {{text}}'.replace(/(t)(e)(x)(t)/g, '$4$3$2$1');
+alert(result)*/
+	
+/*var result = '23 + 35 ='.replace(/(\d+)\s\+\s(\d+)\s=/g, function(match, match1, match2){
+	var sum =  Number(match1) + Number(match2);
+	return match + ' ' + sum;
+});
+alert(result);*/
+	
+
+//alert(/^(19\d\d|20\d\d|2100)$/.test('2000'))
+	
+//alert(/^(0\d|2[0-3]):[0-5]\d$/.test('03:40'))
+
+//alert(/^(0\d|[1-2][0-3])\.[0-5]\d\s[ap]m$/.test('12.00 pm'));
+
+/*var result = 'fuf fffffffu63'.replace(/(.)\1{1,}/g, '');
+alert(result)*/
+	
+//var result = 'dsf xxx xxx sd'.replace(/(.)\1{1,}\s(.)\1{1,}\s/g, '$1');
+//var result = 'dsf xxx xxxx sd'.replace(/\b(\w+)\s\1/g, '$1');
+//alert(result)
+	
+var result = 'dsf xxx xxx xxx xxx sd'.replace(/\b(\w+)\b(\s\1)+/g, '$1');
+//var result = 'dsf xxx xxx xxxx xxx sd'.replace(/\b(\w+)\b(?:\s+\1\b)/g, '$1');
+alert(result);
+
+</script>

@@ -1,0 +1,35 @@
+<html>
+    <body>
+        
+        
+<input type="text" data-length = "2">
+<input type="text" data-length = "3">
+<input type="text" data-length = "4">
+
+
+<script>
+var elems = document.getElementsByTagName('input');
+
+for (var i = 0; i < elems.length; i++) {
+	elems[i].addEventListener('blur', func);
+}
+
+function func() {
+    var correct = this.dataset.length;
+    var mystery = this.value.length;
+    if(correct == mystery){
+        this.style.borderColor = 'green';
+    }else{
+        this.style.borderColor = 'red';
+    }
+}
+        
+        </script>    
+        
+        
+        
+        
+        
+        
+    </body>
+</html>

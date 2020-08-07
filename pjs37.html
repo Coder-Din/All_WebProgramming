@@ -1,0 +1,20 @@
+<html>
+	<body>
+		<input class="text" type="checkbox">
+		<input class="text" type="checkbox">
+		<input class="text" type="checkbox">
+		<button onclick="func()"></button>
+	<script>
+	var text = document.getElementsByClassName('text');
+	function func(){
+		for(i = 0; i < text.length; i++){
+			if (text[i].checked) {
+		       text[i].checked = false;
+ 	        } else {
+		          text[i].checked = true;
+ 	        }
+		}
+	}
+	</script>
+	</body>
+</html>

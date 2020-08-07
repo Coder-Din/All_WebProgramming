@@ -1,0 +1,44 @@
+#wrapper{
+    margin: 0 auto;
+    width: 1000px;
+    border: 1px solid black;
+}
+#header{
+    border: 1px solid black;
+    height: 200px;
+    margin-bottom: 20px;
+}
+#left{
+    float: left;
+    width: 200px;
+    margin-left: 20px;
+}
+.sidebar-div{
+    height: 200px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+#main{
+    outline: 1px solid black;
+    width: 520px;
+    height: 700px;
+    margin: 0 240px;
+}
+#right{
+    outline: 1px solid black;
+    float: right;
+    margin-right: 20px;
+    width: 200px;
+    height: 700px;
+}
+#footer{
+    border: 1px solid black;
+    height: 200px;
+    margin-top: 20px;
+}
+.clearfix{
+    clear: both;
+}
+div{
+    display: block;
+}

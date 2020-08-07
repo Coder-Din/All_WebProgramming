@@ -1,0 +1,38 @@
+main{
+    background-color: black;
+    width: 27%;
+    height: 70%;
+    margin: 5% 36.5% 0% 36.5%;
+    opacity: 0.8;
+    border-radius: 2%;
+}
+.text{
+    padding: 15%;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    color: white;
+    margin-bottom: 35px;
+}
+p{
+    border-bottom: solid 1px white;
+    margin-bottom: 30px;
+    text-align: left;
+}
+body{
+    background: url(sunrise.jpg) no-repeat;
+    background-size: 100%;
+}
+p{
+    color: grey;
+}
+button{
+    padding: 10px;
+    border: 1px solid white;
+    width: 50%;
+    border-radius: 7%;
+    color: white;
+    background-color: black;
+    opacity: 0.8;
+}

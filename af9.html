@@ -1,0 +1,23 @@
+<html>
+	<body>
+		<p data-attribute = 0>text 1</p>
+		<p data-attribute = 0>text 2</p>
+		<p data-attribute = 0>text 3</p>
+		<p data-attribute = 0>text 4</p>
+		<p data-attribute = 0>text 5</p>
+		<script>
+		var text = document.getElementsByTagName('p');
+		var colors = ['red', 'green', 'blue', 'grey', 'black', 'purple'];
+		
+        var func = function(){
+		    this.style.backgroundColor = colors[this.dataset.attribute];
+			this.dataset.attribute++;
+			   
+		}	
+		for(i = 0; i < text.length; i++){
+			text[i].addEventListener('click', func);
+		}
+		</script>
+		
+	</body>
+</html>

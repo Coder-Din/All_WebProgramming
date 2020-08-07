@@ -1,0 +1,20 @@
+<html>
+	<body>
+		<input type="text" id="inp">
+	<script>
+	var inp = document.getElementById('inp');
+	inp.addEventListener('blur', check);
+	
+	
+		
+	function check(){
+		var inputValue = inp.value;
+		if(inputValue > 0 && inputValue < 101){
+			inp.style.background = 'green';
+		}else{
+			inp.style.background = 'red';
+		}
+	}
+	</script>
+	</body>
+</html>

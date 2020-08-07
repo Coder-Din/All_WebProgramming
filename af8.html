@@ -1,0 +1,18 @@
+<html>
+	<body>
+    <button>0</button>
+    <button>0</button>
+    <button>0</button>
+	    <script>
+		
+		var button = document.getElementsByTagName('button');
+		var func = function(){
+			this.innerHTML++;
+			
+		}
+		for(j = 0; j < button.length; j++){
+			button[j].addEventListener('click', func);
+		}
+		</script>
+	</body>
+</html>

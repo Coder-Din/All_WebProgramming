@@ -1,0 +1,21 @@
+<html>
+	<body>
+		<p id="text"></p>
+		<a onclick="justfunc()" href="#">Click there</a>
+	<script>
+	var text = document.getElementById('text');
+	var num = ['один', 'два', 'три'];
+	var i = 0;
+	function justfunc(){
+
+		if(i < 3 & i >1){
+		i++;
+		}else{
+		i = 0;
+		}
+     	text.innerHTML = num[i];
+		alert(text.innerHTML);
+	}
+	</script>
+	</body>
+</html>

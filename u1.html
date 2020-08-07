@@ -1,0 +1,26 @@
+<html>
+	<body>
+		
+		<form id="form">
+			<input value="1">
+			<input value="2">
+			<input value="3">
+			<input value="4">
+		</form>
+		<button onclick="func()"></button>
+		
+		<script>
+		
+		
+		function func(){
+			var form = document.getElementById('form');
+			var numb = 0;
+			for (var i = 0; i < form.length; i++) {
+	        numb += Number(form[i].value);
+            }
+			alert(numb);
+		}
+			
+		</script>
+	</body>
+</html>

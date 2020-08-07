@@ -1,0 +1,23 @@
+<html>
+	<body>
+		<script>
+		
+		var array = [1, 2, 3, 0, 4, 5, 6];
+		var num = 0;
+        var nArray = array.reduceRight(function(sum, elem) {
+			
+		if(elem == 0) {
+		   num = sum;
+	    } else {
+		   return sum + elem;
+		}
+			
+        });
+		if(isNaN(nArray)){
+			nArray = num;
+		}
+	    alert(nArray);
+		
+		</script>
+	</body>
+</html>

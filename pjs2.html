@@ -1,0 +1,17 @@
+<html>
+	<body>
+		<input value="1" class="num"><input value="2" class="num"><input value="3" class="num"><button onclick="sum()">click</button><p id="result"></p>
+		<script>
+		var input = document.getElementsByClassName('num');
+	    var aiv = document.getElementById('result')
+		var sumnumb = 0;
+		function sum(){
+		for(var i = 0; i < input.length; i++){
+				sumnumb += +input[i].value;
+			}
+		aiv.innerHTML = sumnumb;
+			
+		}
+		</script>
+	</body>
+</html>

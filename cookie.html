@@ -1,0 +1,33 @@
+<html>
+	<body>
+		<a href="cookiesub.html">Just a link</a>
+		<input type="date" id="birthday" placeholder="Write your bithday">
+	</body>
+</html>
+<script>
+
+/*document.cookie = 'name = Дин';
+document.cookie = 'age = 14'
+alert(document.cookie);*/
+	
+var birthday = document.getElementById('birthday')
+birthday.addEventListener('blur', getbirthday)
+function getbirthday(){
+	var birthdayvalue = birthday.value;
+	var daymonthyear = birthdayvalue.split('-')
+	var days = Number((daymonthyear[1] - 1) * 30.42) + Number(daymonthyear[2])	
+	var hours = days * 24;
+	var minutes = hours * 60;
+	var seconds = minutes * 60;
+	var milliseconds = Math.round(seconds * 1000);
+	document.cookie = 'milliseconds =' + milliseconds;
+	alert(document.cookie)
+	var date = new Date;
+	date.setDate(date.getDate() + 1);
+	date = date.toUTCString();
+	document.cookie = 'milliseconds=milliseconds; path=/; expires='+date;
+}
+	
+
+
+</script>

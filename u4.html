@@ -1,0 +1,29 @@
+<html>
+	<body>
+		
+		<select id="selid">
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		</select>
+		<input id="inid" placeholder="Number 1-3">
+		<button onclick="funcc()">Send</button>
+		
+		<script>
+		
+		var selid = document.getElementById('selid');
+		var inid = document.getElementById('inid');
+		function funcc(){
+			if(inid.value == 1){
+				selid.selectedIndex = 0;
+			}else if(inid.value == 2){
+				selid.selectedIndex = 1;
+		    }else{
+			    selid.selectedIndex = 2;	
+			}
+			}
+		
+			
+		</script>
+	</body>
+</html>

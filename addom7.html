@@ -1,0 +1,19 @@
+<html>
+	<head></head>
+	<body>
+		
+		<div id="elem" onclick="func()"></div>
+		
+		<script>
+		
+		var elem = document.getElementById('elem');
+		elem.style.cssText = 'background-color: red; width: 30px; height: 30px; border: 1px solid black;';
+		
+		function func(){
+			document.write(elem.tagName);
+		}	
+		</script>
+		
+		
+	</body>
+</html>

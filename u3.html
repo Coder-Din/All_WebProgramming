@@ -1,0 +1,29 @@
+<html>
+	<body>
+		
+		<form>
+		<select id="select">
+			<option value="1">1</option>
+			<option value="2" selected>2</option>
+			<option value="3">3</option>
+		</select>
+		<input id="input">
+		</form>
+		<script>
+		
+		var select = document.getElementById('select');
+		var input = document.getElementById('input');
+		
+	    select.onblur = func;
+        
+		function func(){
+			for(i = 0; i < select.length; i++){
+			if(select[i].selected == true){
+				input.value = select[i].value;
+			}
+		}
+			
+		}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+	<body>
+		<input type="text" id="inp" onblur="redder()">
+		<li class="list">1</li>
+		<li class="list">2</li>
+		<li class="list">3</li>
+		<li class="list">4</li>
+		<li class="list">5</li>
+	<script>
+	    var inp = document.getElementById('inp');
+		var list = document.getElementsByClassName('list');
+		var num = 0;
+		function redder(){
+			var num = inp.value - 1;
+			list[num].style.color = 'red';
+		}
+	</script>
+	</body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+	<body>
+		<input type="text" value="5" id="inp">
+		<button onclick="minus()">Substract 1</button>
+		<button onclick="add()">Add 1</button>
+		<button onclick="inputvalue()">Find the value</button>
+	<script>
+	var inp = document.getElementById('inp');
+	var inputValue = Number(inp.value);
+	function minus(){
+		
+		if(inputValue > 0){
+			inputValue -= 1;
+			inp.value = inputValue;
+		}
+	}
+	function add(){
+		if(inputValue >= 0){
+			inputValue += 1;
+			inp.value = inputValue;
+		}
+	}
+	function inputvalue(){
+		alert(inputValue);
+	}
+	</script>
+	</body>
+</html>

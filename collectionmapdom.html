@@ -1,0 +1,20 @@
+<html>
+	<body>
+		<p>p1</p>
+		<p>p2</p>
+		<p>p3</p>
+		<p>p4</p>	
+	</body>
+	<script>
+	
+	var text = document.getElementsByTagName('p');
+	let map = new Map();
+	for (let i = 0; i < text.length; i++){
+		map.set(text[i].innerHTML, i)
+		text[i].addEventListener('click', () => text[i].innerHTML += i + 1);
+	}
+	for(let elem of map){
+		console.log(elem);
+	}
+	</script>
+</html>

@@ -1,0 +1,15 @@
+.main{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0px auto;
+    border: 1px solid blue;
+}
+.main div{
+    width: 200px;
+    height: 200px;
+    border: 1px solid blue;
+    margin-bottom: 30px;
+   
+}

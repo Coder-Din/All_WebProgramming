@@ -1,0 +1,28 @@
+.header{
+    background-color: blue;
+    width: 600px;
+    
+    margin: 0 auto;
+}
+a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+ul{
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0px;
+}
+li{
+    list-style: none;
+    
+   border: 1px solid black;
+   
+}
+a:hover{
+    color: blue;
+    background-color: white;
+}

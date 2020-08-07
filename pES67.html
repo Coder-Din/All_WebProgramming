@@ -1,0 +1,33 @@
+<script>
+
+	function getInt(...arrs){
+		let result = [];
+		let arr0 = arrs.shift();
+		
+		for (let elem of arr0) {
+			if(inArrays(arrs, elem)){
+				result.push(elem);
+			}
+		}
+		return result;
+	}
+	function inArrays(arrs, elem) {
+		for (let arr of arrs) {
+			if(!inArray(arr, elem)){
+				return false;
+			}
+		}
+		return true;
+	}
+	function inArray(arr, elem) {
+		return arr.find(function(e){
+		if(e === elem){
+			return true;
+		}else{
+			return false;
+		}
+		});
+	}
+	console.log(getInt([1,2,3], [2,3,4,5], [2,3,4,6]));
+
+</script>

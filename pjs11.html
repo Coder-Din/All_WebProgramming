@@ -1,0 +1,24 @@
+<html>
+	<body>
+		<input id="inp" type="text">
+		<script>
+		var inp = document.getElementById('inp');
+		inp.addEventListener('blur', weekday);
+		var weekdays = ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'];
+		function weekday(){
+        var dateyear = inp.value;
+		console.log(dateyear);
+		var dateyear1 = dateyear.split('.');
+		console.log(dateyear1);
+		var gooddate = dateyear1.reverse();
+			console.log(gooddate);
+		var gooddate1 = gooddate.join('.');
+			console.log(gooddate1);
+		var date = new Date(gooddate1);
+		var day = date.getDay();
+			console.log(day);
+		alert(weekdays[day]);
+		}
+		</script>
+	</body>
+</html>

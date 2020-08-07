@@ -1,0 +1,18 @@
+<html>
+
+	<body>
+		
+		<button onclick="doublesize()" id="elem" style="width: 100px;height: 50px;">click me!</button>
+			
+		<script>
+		
+		var elem = document.getElementById('elem');
+		function doublesize(){
+		elem.style.width = elem.offsetWidth * 2 + 'px';	
+		elem.style.height = elem.offsetHeight * 2 + 'px';
+		}
+		
+		</script>
+	</body>
+	
+</html>

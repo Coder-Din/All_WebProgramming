@@ -1,0 +1,15 @@
+<html>
+	<body>
+		<div id="elem"><!--comment--><span><b>bold</b>span</span> text </div>
+		<script>
+		elem.childNodes.forEach(function(child){
+			if (child.nodeType == 1){
+				console.log(child.innerHTML);
+			}
+			if (child.nodeType != 1){
+				console.log(child.textContent);
+			}
+		})
+		</script>
+	</body>
+</html>

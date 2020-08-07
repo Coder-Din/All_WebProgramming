@@ -1,0 +1,22 @@
+<html>
+    <head>
+    	<title></title>
+    </head>
+    <body>
+    	
+    	<li id="elem">Hello hska</li>
+    	
+    </body>
+	<script>
+	var obj = {id: 'elem', color: 'blue', border: '1px solid red', font: '15px Arial'};
+	function csser(obj){
+		var elem = document.getElementById(obj.id)
+		elem.style.color = obj.color;
+		elem.style.border = obj.border;
+		elem.style.font = obj.font;
+		console.log(elem.style.font);
+	}
+	csser(obj)
+	
+	</script>
+</html>

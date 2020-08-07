@@ -1,0 +1,74 @@
+<html>
+	<head></head>
+	<body>
+	
+		<select id="year-select">
+		</select>
+		<select id="month-select">
+		</select>
+		<select id="day-select"></select>
+		
+		<script>
+		
+		var yearSelect = document.getElementById('year-select');
+		var monthSelect = document.getElementById('month-select');
+		var daySelect = document.getElementById('day-select');
+		
+		let date = new Date();
+		let currentYear = date.getFullYear();
+		let currentMonth = date.getMonth() + 1;
+		let currentDay = date.getDate();
+		
+		fillSelect(yearSelect, range(currentYear - 10, currentYear + 10));
+		fillSelect(monthSelect, range(1, 12));
+		fillSelect(daySelect, range(1, 31));
+			
+		yearSelect.value = currentYear;
+		monthSelect.value = currentMonth;
+		daySelect.value = currentDay;
+			
+		yearSelect.addEventListener('focus', selectFocusHandle);
+		monthSelect.addEventListener('focus', selectFocusHandle);
+		daySelect.addEventListener('focus', selectFocusHandle);
+			
+		yearSelect.addEventListener('focus', selectChangeHandle);
+		monthSelect.addEventListener('focus', selectChangeHandle);
+		daySelect.addEventListener('focus', selectChangeHandle);
+			
+		function selectChangeHandle(){
+			if(checkDate(yearSelect.value, monthSelect.value, daySelect.value)){
+				console.log('yes');
+			}else{
+				console.log('no');
+				this.value = this.dataset.default;
+			}
+		}
+		
+		function selectFocusHandle(){
+				this.dataset.default = this.value;
+		}
+			
+		function fillSelect(select, arr){
+			arr.forEach(function(elem){
+				select.add(new Option(elem));
+			});
+		}
+			
+		function range(from, to){
+			let result = [];
+			
+			for(let i = from; i <= to; i++){
+				result.push(i);
+			}
+			
+			return result;
+		}
+		
+		function checkDate(year, month, day){
+			let date = new Date(year, month - 1, day);
+			return date.getFullYear() == year && date.getMonth() == month - 1 && date;
+		}	
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+	<input type="text" id="inp">
+	<button onclick="check()">Click here!</button>
+	<script>
+	var inp = document.getElementById('inp');
+	
+	function check(){
+		var inpv = inp.value;
+		console.log(inpv);
+		var inpv1 = inpv.split('');
+		var inpvr = inpv1.reverse();
+		console.log(inpvr);
+		var inpvr2 = inpvr.join('');
+		console.log(inpvr2);
+		if(inpv === inpvr2){
+			alert('Слово читается с начала и с конца одинаково!');
+		}else{
+			alert('Слово не читается с начала и с конца одинаково!');
+		}
+	}
+	</script>
+</html>

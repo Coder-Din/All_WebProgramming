@@ -1,0 +1,31 @@
+header{
+    border: 1px solid lightblue;
+    background-color: lightblue;
+    text-align: right;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+} 
+main{
+    padding: 3% 20% 0% 20%;
+}
+a{
+    text-decoration: none;
+}
+.divl{
+    text-align: center;
+}
+.divr{
+    text-align: left;
+    float: right;
+    width: 50%;
+    
+}
+footer{
+    border: 1px solid lightblue;
+    background-color: lightblue;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;  
+
+}

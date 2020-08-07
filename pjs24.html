@@ -1,0 +1,15 @@
+<html>
+	<body>
+		<input type="text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+	<script>
+	var inp = document.querySelector('input');
+    document.documentElement.addEventListener('mouseup', func);
+
+    function func() {
+	    var content = window.getSelection().toString();
+	    inp.value = content;
+    }   
+	</script>
+	</body>
+</html>

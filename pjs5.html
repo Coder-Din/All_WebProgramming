@@ -1,0 +1,18 @@
+<html>
+	<body>
+		<input type="text" id="inp"><input type="text" class="inpts"><input type="text" class="inpts"><input type="text" class="inpts">
+		<script>
+		var inp = document.getElementById('inp');
+		
+		var inpts = document.getElementsByClassName('inpts');
+		inp.addEventListener('blur',separ);
+		function separ(){
+		var sepfio = inp.value.split(' ');	
+	    for(i = 0; i < sepfio.length; i++){
+			inpts[i].value = sepfio[i];
+			
+		}
+		}
+		</script>
+	</body>
+</html>

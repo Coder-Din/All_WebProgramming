@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+  <html>
+   <head>
+       <title>JUst a title</title>
+   </head>
+    <body>
+        
+        
+        
+  <a href="random" title="">Текст первой ссылки</a>
+<a href="anotherrandom" title="">Текст второй ссылки</a>
+<a href="onemorerandom" title="">Текст третьей ссылки</a>
+
+
+<script>
+var elems = document.getElementsByTagName('a');
+for (var i = 0; i < elems.length; i++) {
+	elems[i].addEventListener('mouseover', func);
+}
+
+function func() {
+this.innerHTML = this.innerHTML + ' (' + this.href + ')';
+    this.removeEventListener('mouseover', func)
+}
+        
+        </script> 
+        
+        
+        
+        
+        
+    </body>
+</html>

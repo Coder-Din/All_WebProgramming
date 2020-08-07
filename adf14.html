@@ -1,0 +1,22 @@
+<html>
+	<body>
+		<script>
+		
+		var array = [6, 1, 3, 8, 3, 3];
+		var num = 1;
+        var nArray = array.reduce(function(sum, elem) {
+			
+			if(sum > 10){
+				alert(num);
+			    return;
+				
+			}else{
+				num++;
+				return sum + elem;
+			}
+        });
+	    
+	  
+		</script>
+	</body>
+</html>

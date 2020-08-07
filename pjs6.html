@@ -1,0 +1,19 @@
+<html>
+	<body>
+		<input type="text" id="inp">
+		<script>
+		var inp = document.getElementById('inp');
+		inp.addEventListener('blur',caps);
+		function caps(){
+			var sepfio = inp.value.split(' ');
+			for(i = 0; i < sepfio.length; i++){
+				sepfio[i] = sepfio[i].split('');
+				sepfio[i][0] = sepfio[i][0].toUpperCase();
+				sepfio[i] = sepfio[i].join('');
+			}
+			inp.value = sepfio.join(' ');
+			 
+		}
+		</script>
+	</body>
+</html>

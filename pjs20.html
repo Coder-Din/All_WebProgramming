@@ -1,0 +1,18 @@
+<html>
+	<body>
+		<img src="surfing.jpg" id="image" onclick="doublesize()">
+		<script>
+	 	var image = document.getElementById('image');
+		var statement = false;
+	    function doublesize(){
+			if(statement == false){
+				image.width *= 2;
+				statement = true;
+			}else if(statement == true){
+				image.width /= 2;
+				statement = false;
+			}
+		}
+		</script>
+	</body>
+</html>

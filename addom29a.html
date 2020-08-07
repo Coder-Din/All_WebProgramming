@@ -1,0 +1,18 @@
+<html>
+	<body>
+		<ol>
+<li>7777777777</li>
+<li>8888888888</li>
+<li>9999999999</li>
+</ol>
+<script>
+let parent = document.querySelector('ol');
+let elemList = parent.children;
+for(let i = 0; i < elemList.length; i++) {
+elemList[i].addEventListener('click', function () {
+this.parentElement.removeChild(this);
+});
+}
+		</script>
+	</body>
+</html>
