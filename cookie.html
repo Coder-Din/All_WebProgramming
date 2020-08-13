@@ -10,24 +10,45 @@
 document.cookie = 'age = 14'
 alert(document.cookie);*/
 	
-var birthday = document.getElementById('birthday')
-birthday.addEventListener('blur', getbirthday)
+	
+function timeleft(milliseconds){
+	var date = new Date();
+	var todaymonth = date.getMonth() + 1;
+	var todayday = todaymonth * 30.42 + date.getDate();
+	var todayminutes = todayday * 24 * 60;
+	var todaymilliseconds = todayminutes * 60 * 1000
+	if (milliseconds > todaymilliseconds) {
+		var millisecondsleft = milliseconds - todaymilliseconds;
+		var monthsleft = millisecondsleft/(1000*60*60*24*30.42)
+		var daysleft = Number('0.' + String((String(monthsleft).split("."))[1])) * 30.42;
+		var hoursleft = Number('0.' + String((String(daysleft).split("."))[1])) * 24;
+		var minutesleft = Number('0.' + String((String(hoursleft).split("."))[1])) * 60;
+		var secondsleft = Number('0.' + String((String(minutesleft).split("."))[1])) * 60;
+		monthsleft = Math.floor(monthsleft)
+		alert(monthsleft)
+		
+	}
+}
+	
+	
+var birthday = document.getElementById('birthday');
+birthday.addEventListener('blur', getbirthday);
 function getbirthday(){
 	var birthdayvalue = birthday.value;
-	var daymonthyear = birthdayvalue.split('-')
-	var days = Number((daymonthyear[1] - 1) * 30.42) + Number(daymonthyear[2])	
+	var daymonthyear = birthdayvalue.split('-');
+	alert(daymonthyear);
+	var months = daymonthyear[1];
+	var days = Number((months) * 30.42) + Number(daymonthyear[2]);
 	var hours = days * 24;
 	var minutes = hours * 60;
 	var seconds = minutes * 60;
 	var milliseconds = Math.round(seconds * 1000);
 	document.cookie = 'milliseconds =' + milliseconds;
-	alert(document.cookie)
 	var date = new Date;
 	date.setDate(date.getDate() + 1);
 	date = date.toUTCString();
-	document.cookie = 'milliseconds=milliseconds; path=/; expires='+date;
-}
-	
-
+	document.cookie = 'milliseconds=' + milliseconds + '; path=/; expires='+date;
+	timeleft(milliseconds);
+} 
 
 </script>
